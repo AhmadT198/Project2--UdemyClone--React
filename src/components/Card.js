@@ -4,10 +4,9 @@ import './Style.css'
 class Card extends Component {
     render() {
         let course = this.props.course;
-        console.log(course);
         return (
             
-                <li className={"course"+course.id}>
+                <li className={`course${course.id}`}>
                     <a href="#">
                         <div className='singleCourse'>
                             <img alt={course.title} src={course.image} />
@@ -22,7 +21,7 @@ class Card extends Component {
                                 <span className='usersNum'>{course.rating[1]}</span>
                             </div>
                             <div>
-                                <span className="price">{"E£"+course['new-price']}</span> <span className="prev-price">{"E£"+course['original-price']}</span>
+                                <span className="price">{`E£${course['new-price']}`}</span> <span className="prev-price">{`E£${course['original-price']}`}</span>
                             </div>
                         </div>
                     </a>
