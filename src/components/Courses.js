@@ -62,9 +62,10 @@ let courseData = [
 ]
 
 
-console.log(courseData)
 class Courses extends Component {
+
     render() {
+        const courseList = courseData.map(data => <Card course={data} />) 
         return (
 
             <section class="course-details">
@@ -76,12 +77,7 @@ class Courses extends Component {
                 </div>
 
                 <ul>
-                    <Card course={courseData[0]} />
-                    <Card course={courseData[1]} />
-                    <Card course={courseData[2]} />
-                    <Card course={courseData[3]} />
-                    <Card course={courseData[4]} />
-
+                    {courseList}
                 </ul>
             </section>
         )
