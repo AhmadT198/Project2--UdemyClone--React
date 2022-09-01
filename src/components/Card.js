@@ -32,4 +32,5 @@ class Card extends Component {
     };
 }
 
+console.log(typeof Card)
 export default Card

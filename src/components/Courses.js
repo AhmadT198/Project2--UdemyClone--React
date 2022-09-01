@@ -65,15 +65,15 @@ let courseData = [
 class Courses extends Component {
 
     render() {
-        const courseList = courseData.map(data => <Card course={data} />) 
+        const courseList = courseData.map((data,idx) => <Card key={idx} course={data} />) 
         return (
 
-            <section class="course-details">
+            <section className="course-details">
 
-                <div class="course-intro">
+                <div className="course-intro">
                     <h2>Expand your career opportunities with Python</h2>
                     <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
-                    <button class=" navBtn">Explore Python</button>
+                    <button className=" navBtn">Explore Python</button>
                 </div>
 
                 <ul>
