@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './Style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 class Card extends Component {
 

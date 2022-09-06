@@ -12,14 +12,16 @@ import HomePage from './components/HomePage';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStarHalfStroke, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import NavBar from './components/NavBar';
 
-library.add(faStarHalfStroke, faStar)
+library.add(faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe)
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+    <NavBar />
     <Routes>
       <Route path="/" element={<HomePage />} />
       {/* <Route path="/courses" element={<App />} /> */}
