@@ -131,7 +131,7 @@ a{
     display: flex;
     align-items: center;
 }
-.singleCourse .rating i{
+.singleCourse .rating .singleStar{
     color:orange;
     font-size:0.7rem;
 }
