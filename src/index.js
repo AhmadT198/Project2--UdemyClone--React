@@ -9,13 +9,16 @@ import {
   Route,
 } from "react-router-dom";
 import HomePage from './components/HomePage';
+import NavBar from './components/NavBar';
+import SingleCoursePage from './components/SingleCoursePage'
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe } from '@fortawesome/free-solid-svg-icons'
-import NavBar from './components/NavBar';
+import { faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe,faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+library.add(faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft)
 
-library.add(faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe)
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,7 +27,7 @@ root.render(
     <NavBar />
     <Routes>
       <Route path="/" element={<HomePage />} />
-      {/* <Route path="/courses" element={<App />} /> */}
+      <Route path="/course/:courseId" element={<SingleCoursePage />} />
 
     </Routes>
   </BrowserRouter>

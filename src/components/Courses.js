@@ -1,84 +1,83 @@
 import React, { Component } from 'react'
 import Card from './Card.js'
-
-
-let courseData = [
-    {
-        "id": 1,
-        "image": "https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
-        "title": "Learn Python: The Complete Python Programming Course",
-        "instructor": "Avinash Jain,The Codex",
-        "rating": ["4.4", "2,845"],
-        "sale": true,
-        "original-price": "679.99",
-        "new-price": "199.99",
-        "best-seller": false
-    },
-    {
-        "id": 2,
-        "image": "https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg",
-        "title": "Learning Python for Data Analysis and Visualization",
-        "instructor": "Jose Portilla",
-        "rating": ["4.4", "17,956"],
-        "sale": true,
-        "original-price": "1599.99",
-        "new-price": "269.99",
-        "best-seller": true
-
-    },
-    {
-        "id": 3,
-        "image": "https://img-c.udemycdn.com/course/480x270/405878_e5a0_3.jpg",
-        "title": "Python for Beginners - Learn Programming from scratch",
-        "instructor": "Edwin Diaz, Coding Faculty Solutions",
-        "rating": ["4.4", "1,734"],
-        "sale": true,
-        "original-price": "679.99",
-        "new-price": "199.99",
-        "best-seller": false
-    },
-    {
-        "id": 4,
-        "image": "https://img-c.udemycdn.com/course/480x270/426570_1b91_3.jpg",
-        "title": "Learn Python: Python for Beginners",
-        "instructor": "Abrar Hussain",
-        "rating": ["4.2", "2,759"],
-        "sale": true,
-        "original-price": "319.99",
-        "new-price": "199.99",
-        "best-seller": true
-    },
-    {
-        "id": 5,
-        "image": "https://img-c.udemycdn.com/course/480x270/449532_2aa9_7.jpg",
-        "title": "Python Beyond the Basics - Object-Oriented Programming",
-        "instructor": "Infinte Skills",
-        "rating": ["4.4", "2,927"],
-        "sale": true,
-        "original-price": "519.99",
-        "new-price": "199.99",
-        "best-seller": false
-    }
-]
-
+import Tab from './Tab.js'
+import TabContent from './TabContent.js'
 
 class Courses extends Component {
 
+    constructor(props) {
+        super(props)
+        let homePageData;
+        this.state = {
+            isLoading: true,
+            post: {},
+            error: ""
+        }
+    }
+
+    componentDidMount() {
+        this.setState({
+            isLoading: true,
+            error: "",
+            post: {}
+        })
+        fetch('https://ahmadt198.github.io/Data/db.json')
+            .then(res => res.json())
+            .then((data) => {
+                this.setState({ post: data, isLoading: false, error: "" })
+                this.homePageData = data['HomePage']
+                this.homePageData = Object.entries(this.homePageData)
+            })
+            .catch((error) => {
+                this.setState({ isLoading: false, error: error })
+            })
+    }
+
+    displayTabs() {
+        const tabList = this.homePageData.map((subject, idx) => <Tab key={subject[1]['id']} subject={subject} id={idx} />)
+        console.log(tabList)
+
+        return <>{tabList}</>
+    }
+
+    displayTabContent()
+    {
+        const contentPerTab = this.homePageData.map((subject,idx) => <TabContent key={subject[1]['id']} subject={subject} id={idx} />)
+        return <>{contentPerTab}</>
+    }
+
     render() {
-        const courseList = courseData.map((data,idx) => <Card key={idx} course={data} />) 
+
         return (
 
-            <section className="course-details">
+            <section className="courses">
 
-                <div className="course-intro">
-                    <h2>Expand your career opportunities with Python</h2>
-                    <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
-                    <button className=" navBtn">Explore Python</button>
-                </div>
+                <h1>A board selection of courses</h1>
+                <p className="mb-0">Choose from 185,000 online video courses with new additions published every month</p>
 
-                <ul>
-                    {courseList}
-                </ul>
+
+                {(this.state.isLoading ? (<div>Loading...</div>)
+                    :
+                    (<>
+                        {
+                            this.state.error ? (
+                                <div>{this.state.error}</div>
+                            ) :
+                                (
+                                    <>
+                                        <ul className="nav nav-tabs border-0" id="myTab" role="tablist">
+                                            {this.displayTabs()}
+                                        </ul>
+                                        <div class="tab-content w-100" id="myTabContent">
+                                            {this.displayTabContent()}
+                                        </div>
+                                    </>
+                                )
+                        }
+                    </>)
+                )
+                }
+
             </section>
         )
     }

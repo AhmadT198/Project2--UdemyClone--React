@@ -8,6 +8,8 @@
             "items": [
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 394676,
                     "title": "Learn Python: The Complete Python Programming Course",
                     "url": "/course/pythonforbeginners/",
@@ -128,6 +130,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 396876,
                     "title": "Learning Python for Data Analysis and Visualization",
                     "url": "/course/learning-python-for-data-analysis-and-visualization/",
@@ -324,6 +328,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 405878,
                     "title": "Python for Beginners - Learn Programming from scratch",
                     "url": "/course/python-for-beginners-learn-programming-from-scratch/",
@@ -443,6 +449,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 449532,
                     "title": "Python Beyond the Basics - Object-Oriented Programming",
                     "url": "/course/python-beyond-the-basics-object-oriented-programming/",
@@ -551,6 +559,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 482754,
                     "title": "Python From Scratch & Selenium WebDriver QA Automation 2022",
                     "url": "/course/selenium-webdriver-and-python/",
@@ -705,6 +715,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 519554,
                     "title": "Teach Your Kids to Code: Learn to Program Python at Any Age!",
                     "url": "/course/teach-your-kids-to-code/",
@@ -859,6 +871,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 535622,
                     "title": "Python for Data Structures, Algorithms, and Interviews!",
                     "url": "/course/python-for-data-structures-algorithms-and-interviews/",
@@ -1030,6 +1044,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 543600,
                     "title": "Automate the Boring Stuff with Python Programming",
                     "url": "/course/automate/",
@@ -1229,6 +1245,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 558096,
                     "title": "Python 3 For Offensive PenTest: A Complete Practical Course",
                     "url": "/course/python-for-offensive-security-practical-course/",
@@ -1372,6 +1390,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 567828,
                     "title": "2022 Complete Python Bootcamp From Zero to Hero in Python",
                     "url": "/course/complete-python-bootcamp/",
@@ -1578,6 +1598,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 577248,
                     "title": "Python for Beginners with Examples",
                     "url": "/course/ardit-sulce-python-for-beginners/",
@@ -1686,6 +1708,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 622414,
                     "title": "Taming Big Data with Apache Spark and Python - Hands On!",
                     "url": "/course/taming-big-data-with-apache-spark-hands-on/",
@@ -1928,6 +1952,8 @@
             "items": [
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 31535,
                     "title": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
                     "url": "/course/microsoft-excel-2013-course-beginners-intermediate-training/",
@@ -2036,6 +2062,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 39292,
                     "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
                     "url": "/course/advanced-microsoft-excel-2013-online-excel-course/",
@@ -2144,6 +2172,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 49250,
                     "title": "Microsoft Excel - From Beginner to Expert in 6 Hours",
                     "url": "/course/thebestexcel/",
@@ -2294,6 +2324,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 51078,
                     "title": "Sharper skills using Microsoft Excel 2010 for business",
                     "url": "/course/businessexcel2010/",
@@ -2444,6 +2476,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 56660,
                     "title": "Learn Microsoft Excel 2013 - Advanced",
                     "url": "/course/learn-microsoft-excel-2013-advanced-training/",
@@ -2559,6 +2593,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 58489,
                     "title": "Excel 2013",
                     "url": "/course/excel-2013/",
@@ -2665,6 +2701,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 70720,
                     "title": "7 Steps To Excel Success - Excel Skills And Power Tips",
                     "url": "/course/steps-to-excel-success/",
@@ -2785,6 +2823,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 81744,
                     "title": "Advanced Excel - Beginner to Ninja level (includes Charts)",
                     "url": "/course/excelnext_excel/",
@@ -2905,6 +2945,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 107606,
                     "title": "The Ultimate Microsoft Excel 2013 Training Bundle - 19 Hours",
                     "url": "/course/the-ultimate-microsoft-excel-2013-training-bundle/",
@@ -3013,6 +3055,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 109880,
                     "title": "Comprehensive Microsoft Excel",
                     "url": "/course/comprehensive-microsoft-excel-tutorial/",
@@ -3126,6 +3170,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 164058,
                     "title": "The Ultimate Excel Programmer Course",
                     "url": "/course/ultimate-excel-programmer/",
@@ -3280,6 +3326,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 185916,
                     "title": "Excel Data Analysis For Dummies",
                     "url": "/course/excel-data-analysis-for-dummies/",
@@ -3487,6 +3535,8 @@
             "items": [
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 11475,
                     "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
                     "url": "/course/become-a-certified-web-developer/",
@@ -3607,6 +3657,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 19332,
                     "title": "The Complete 2020 Fullstack Web Developer Course",
                     "url": "/course/thecompletewebdeveloper/",
@@ -3715,6 +3767,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 99986,
                     "title": "Introduction to Web Development",
                     "url": "/course/introduction-to-web-development/",
@@ -3877,6 +3931,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 369662,
                     "title": "Running a Web Development Business: The Complete Guide",
                     "url": "/course/the-complete-guide-to-running-a-web-development-business/",
@@ -4066,6 +4122,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 446134,
                     "title": "Ultimate Web Designer & Web Developer Course",
                     "url": "/course/web-developer-course/",
@@ -4248,6 +4306,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 530308,
                     "title": "Introduction to Programming",
                     "url": "/course/introduction-to-programming-level-i/",
@@ -4368,6 +4428,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 548278,
                     "title": "The Complete 2022 Web Development Course - Build 15 Projects",
                     "url": "/course/complete-web-development-course/",
@@ -4476,6 +4538,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 625204,
                     "title": "The Web Developer Bootcamp 2022",
                     "url": "/course/the-web-developer-bootcamp/",
@@ -4682,6 +4746,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 764164,
                     "title": "The Complete Web Developer Course 2.0",
                     "url": "/course/the-complete-web-developer-course-2/",
@@ -4879,6 +4945,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 787236,
                     "title": "Build Responsive Website Using HTML5, CSS3, JS And Bootstrap",
                     "url": "/course/build-responsive-website-using-html5-css3-js-and-bootstrap/",
@@ -5001,6 +5069,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 818990,
                     "title": "Git a Web Developer Job: Mastering the Modern Workflow",
                     "url": "/course/git-a-web-developer-job-mastering-the-modern-workflow/",
@@ -5144,6 +5214,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 881980,
                     "title": "Pre-Programming: Everything you need to know before you code",
                     "url": "/course/pre-programming-everything-you-need-to-know-before-you-code/",
@@ -5267,6 +5339,8 @@
             "items": [
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 8324,
                     "title": "Javascript for Beginners",
                     "url": "/course/beginning-javascript/",
@@ -5375,6 +5449,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 63612,
                     "title": "1 Hour JavaScript",
                     "url": "/course/1-hour-javascript/",
@@ -5482,6 +5558,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 364426,
                     "title": "JavaScript: Understanding the Weird Parts",
                     "url": "/course/understand-javascript/",
@@ -5653,6 +5731,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 405818,
                     "title": "Javascript for Beginners Learn by Doing Practical Exercises",
                     "url": "/course/javascript-for-beginners-introduction-learn-fast-easy/",
@@ -5815,6 +5895,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 426196,
                     "title": "JavaScript from Beginner to Expert",
                     "url": "/course/javascript-from-beginner-to-expert-bring-life-to-your-site/",
@@ -5923,6 +6005,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 584494,
                     "title": "JavaScript for Kids: Code Your Own Games and Apps at Any Age",
                     "url": "/course/javascript-for-kids/",
@@ -6031,6 +6115,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 670034,
                     "title": "Advanced Javascript",
                     "url": "/course/javascript-advanced/",
@@ -6146,6 +6232,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 695656,
                     "title": "The Complete JavaScript Course For Web Development Beginners",
                     "url": "/course/javascriptcourse/",
@@ -6278,6 +6366,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 851712,
                     "title": "The Complete JavaScript Course 2022: From Zero to Expert!",
                     "url": "/course/the-complete-javascript-course/",
@@ -6530,6 +6620,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 860812,
                     "title": "JavaScript Beginner Bootcamp (2022)",
                     "url": "/course/javascript-the-basics-for-beginners/",
@@ -6638,6 +6730,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 861624,
                     "title": "ES6 Javascript: The Complete Developer's Guide",
                     "url": "/course/javascript-es6-tutorial/",
@@ -6760,6 +6854,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 886300,
                     "title": "Accelerated JavaScript Training",
                     "url": "/course/javascript-bootcamp-2016/",
@@ -6890,6 +6986,8 @@
             "items": [
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 513244,
                     "title": "Data Science A-Z™: Real-Life Data Science Exercises Included",
                     "url": "/course/datascience/",
@@ -7071,6 +7169,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 671576,
                     "title": "Machine Learning, Data Science and Deep Learning with Python",
                     "url": "/course/data-science-and-machine-learning-with-python-hands-on/",
@@ -7259,6 +7359,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 713104,
                     "title": "Data Science: Deep Learning and Neural Networks in Python",
                     "url": "/course/data-science-deep-learning-in-python/",
@@ -7381,6 +7483,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 765242,
                     "title": "R Programming A-Z™: R For Data Science With Real Exercises!",
                     "url": "/course/r-programming/",
@@ -7664,6 +7768,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 821726,
                     "title": "Data Science and Machine Learning Bootcamp with R",
                     "url": "/course/data-science-and-machine-learning-bootcamp-with-r/",
@@ -7877,6 +7983,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 860148,
                     "title": "R Programming: Advanced Analytics In R For Data Science",
                     "url": "/course/r-analytics/",
@@ -8072,6 +8180,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 903744,
                     "title": "Python for Data Science and Machine Learning Bootcamp",
                     "url": "/course/python-for-data-science-and-machine-learning-bootcamp/",
@@ -8324,6 +8434,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 913448,
                     "title": "Python A-Z™: Python For Data Science With Real Exercises!",
                     "url": "/course/python-coding/",
@@ -8498,6 +8610,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 950390,
                     "title": "Machine Learning A-Z™: Hands-On Python & R In Data Science",
                     "url": "/course/machinelearning/",
@@ -8726,6 +8840,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 971154,
                     "title": "Introduction to Machine Learning for Data Science",
                     "url": "/course/machine-learning-for-data-science/",
@@ -8876,6 +8992,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1036342,
                     "title": "SQL & Database Design A-Z™: Learn MS SQL Server + PostgreSQL",
                     "url": "/course/sqldatabases/",
@@ -9101,6 +9219,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1258298,
                     "title": "Complete Data Science Training with Python for Data Analysis",
                     "url": "/course/complete-data-science-training-with-python-for-data-analysis/",
@@ -9224,6 +9344,8 @@
             "items": [
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1047846,
                     "title": "Amazon Web Services (AWS) Certified 2022 - 4 Certifications!",
                     "url": "/course/aws-certified-associate-architect-developer-sysops-admin/",
@@ -9391,6 +9513,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1102458,
                     "title": "AWS Certified Security Specialty 2022",
                     "url": "/course/aws-certified-security-specialty/",
@@ -9587,6 +9711,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1135330,
                     "title": "Part 1: AWS Certified Solutions Architect SAA C03 [Updated]",
                     "url": "/course/aws-certified-solutions-architect-guide-question-bank-i/",
@@ -9695,6 +9821,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1162310,
                     "title": "Practice Test AWS Solutions Architect Associate SAA C03",
                     "url": "/course/practice-test-aws-certified-solutions-architect-associate/",
@@ -9803,6 +9931,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1198532,
                     "title": "Part 2: AWS Certified Solutions Architect SAA C03 [Updated]",
                     "url": "/course/2-aws-certified-solutions-architect-guide-question-bank/",
@@ -9911,6 +10041,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1236626,
                     "title": "AWS Certified Solution Architect - Associate",
                     "url": "/course/aws-solution-architect-associate/",
@@ -10019,6 +10151,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1328072,
                     "title": "AWS Certified Solutions Architect - Associate 2022",
                     "url": "/course/aws-certified-solutions-architect-associate-2018/",
@@ -10127,6 +10261,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1360446,
                     "title": "AWS Certified Cloud Practitioner 2022",
                     "url": "/course/aws-certified-cloud-practitioner/",
@@ -10241,6 +10377,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1425762,
                     "title": "AWS Certified Solutions Architect - Professional 2022",
                     "url": "/course/aws-certified-solutions-architect-professional/",
@@ -10391,6 +10529,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1477998,
                     "title": "AWS Certified Cloud Practitioner - Updated 2020",
                     "url": "/course/aws-certified-cloud-practitioner-2018/",
@@ -10499,6 +10639,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1581742,
                     "title": "AWS Certified Advanced Networking - Specialty 2022",
                     "url": "/course/aws-certified-advanced-networking-specialty/",
@@ -10607,6 +10749,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1717968,
                     "title": "AWS Certified Security Specialist",
                     "url": "/course/aws-security-specialist/",
@@ -10722,6 +10866,8 @@
             "items": [
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 137230,
                     "title": "The Secrets to Drawing",
                     "url": "/course/the-secrets-to-drawing/",
@@ -10828,6 +10974,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 358948,
                     "title": "Art Fundamentals: Foundations of Painting and Drawing Course",
                     "url": "/course/art-fundamentals-drawing-and-painting-essentials/",
@@ -10982,6 +11130,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 382394,
                     "title": "Drawing and Sketching for Beginners",
                     "url": "/course/sketching-for-beginners/",
@@ -11081,6 +11231,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 633084,
                     "title": "Building Confidence Through Drawing: Art for Beginners",
                     "url": "/course/building-kids-confidence-through-drawing-art-for-children/",
@@ -11235,6 +11387,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 670050,
                     "title": "Art for Kids & Beginners: 15 Easy Drawing & Painting Lessons",
                     "url": "/course/art-for-kids-drawing-and-painting-course-for-young-children/",
@@ -11343,6 +11497,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 819676,
                     "title": "Draw Islamic Geometric Patterns With A Compass And Ruler",
                     "url": "/course/islamic-geometry-using-a-compass-straight-edge/",
@@ -11497,6 +11653,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 874012,
                     "title": "The Ultimate Drawing Course - Beginner to Advanced",
                     "url": "/course/the-ultimate-drawing-course-beginner-to-advanced/",
@@ -11754,6 +11912,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1045092,
                     "title": "The Art & Science of Drawing / BASIC SKILLS",
                     "url": "/course/the-art-and-science-of-drawing/",
@@ -11992,6 +12152,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1047436,
                     "title": "How to Draw and Sketch for Absolute Beginners pt 1",
                     "url": "/course/drawing-and-sketching-for-beginners/",
@@ -12167,6 +12329,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1065192,
                     "title": "The Art & Science of Drawing / DYNAMIC MARK MAKING",
                     "url": "/course/the-art-science-of-drawing-week-two-dynamic-mark-making/",
@@ -12349,6 +12513,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1071120,
                     "title": "The Art & Science of Drawing / FORM & SPACE",
                     "url": "/course/the-art-science-of-drawing-weeks-3-4-form-space/",
@@ -12492,6 +12658,8 @@
                 },
                 {
                     "_class": "course",
+                    "original_price": 679.99,
+                    "price": 279.99,
                     "id": 1271412,
                     "title": "The Art & Science of Drawing / MEASURING & PROPORTION",
                     "url": "/course/the-art-science-of-drawing-week-5-measuring-proportion/",
@@ -15124,33 +15292,29 @@
                 "forWho": "<div><h2>Who this course is for:</h2><ul><li>Even if you haven't touched coding before, it won't matter. The easy step-to-step lectures will quickly guide you through everything you'll need to know about coding, mainly Python. This course is here for you to get accustomed and familiar with  Python and its syntax. And above all, Python is one of the easiest coding languages to learn, and there's a lot you can do with it.</li></ul></div>",
                 "instructors": [
                     {
-                        "id":0,
+                        "id": 0,
                         "name": "Avinash Jain",
-                        "intro":"CEO of TheCodex.me - Teaching 500,000+ Students how to code",
-                        "rating":4.4,
-                        "revCount":73806,
-                        "studentCount":891509,
-                        "courseCount":16,
+                        "intro": "CEO of TheCodex.me - Teaching 500,000+ Students how to code",
+                        "rating": 4.4,
+                        "revCount": 73806,
+                        "studentCount": 891509,
+                        "courseCount": 16,
                         "desc": "<div><p><strong><em>&nbsp; &nbsp;</em> </strong>Avinash Jain is currently a senior at UC Berkeley majoring in Electrical Engineering and Computer Science. He's the CEO and Founder of TheCodex, an online educational&nbsp;platform focused on bringing the best programming content to hundreds of&nbsp;thousands of students around the world.</p><p>His programming journey began at the age of 10, starting off with simple Python scripts to crawl the weather.&nbsp;Since then, he's worked at numerous companies and is professionally experienced in Python, iOS Development and Web Development. He's launched a plethora of applications in the App Store amassing thousands of downloads. Additionaly, he's competed and won in&nbsp;several hackathons around the world including PennApps and NWHacks.</p><p>Avinash has a passion to teach - his enthusiasm and love for programming is evident in every video. For the past 7 years he's been an instructor on Udemy and he loves motivating and enabling others to pursue their programming dreams. He hopes to help students realize the power of programming and jumpstart their careers through his courses.</p><p>Checkout TheCodex for all of his courses, fantastic&nbsp;discounts, and&nbsp;any guidance or help.&nbsp;</p></div>"
-                    
                     },
                     {
-                        "id":1,
+                        "id": 1,
                         "name": "The Codex",
-                        "intro":"Teaching Python through Projects",
-                        "rating":4.4,
-                        "revCount":73806,
-                        "studentCount":891509,
-                        "courseCount":16,
+                        "intro": "Teaching Python through Projects",
+                        "rating": 4.4,
+                        "revCount": 73806,
+                        "studentCount": 891509,
+                        "courseCount": 16,
                         "desc": "<div><p>You've taken a lengthy and boring coding class, but you're clueless about applying these concepts to build your ideas. The Codex shows you how to <strong>build fun, practical projects</strong>. Now, you can stand out from the crowd and <strong>land your dream job</strong>.</p><p><br></p><p>Join us on our platform today! </p><p><br></p><p><br></p></div>"
                     }
                 ],
-                "moreCoursesByInst":[
-                    {
-                        
-                    }
-                ] 
-                ,
+                "moreCoursesByInst": [
+                    {}
+                ],
                 "ratingDistribution": [
                     {
                         "rating": 1,

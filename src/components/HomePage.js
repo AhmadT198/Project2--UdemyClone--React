@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 import Courses from './Courses'
+import Header from './Header'
 
 
-export class HomePage extends Component {
+class HomePage extends Component {
   render() {
     return (
-        <Courses />
+      <>
+        <Header />
+        <main>
+          <Courses />
+
+        </main>
+
+      </>
     )
   }
 }

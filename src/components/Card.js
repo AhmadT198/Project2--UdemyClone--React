@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from "react-router-dom";
 
 class Card extends Component {
 
@@ -20,7 +21,7 @@ class Card extends Component {
 
         } else if (frac >= 0.8) //full star for 0.8 and 0.9
         {
-            
+
             result.push(<FontAwesomeIcon className="singleStar" icon="fa-solid fa-star" />)
 
         }
@@ -29,28 +30,41 @@ class Card extends Component {
 
 
     }
+
+    displayInstName() {
+        const inst = this.props.course['visible_instructors'];
+        let result = ""
+        for (let person in inst) {
+            if (person != 0) { result += ',' }
+            result += (inst[person]['display_name'])
+        }
+
+
+        return <>{result}</>
+    }
+
     render() {
-        let course = this.props.course;
+        const { course, idx } = this.props
         return (
 
-            <li className={`course${course.id}`}>
-                <a href="#">
+            <li className={`course${idx}`} key={course['id']}>
+                <Link to={course['url']}>
                     <div className='singleCourse'>
-                        <img alt={course.title} src={course.image} />
-                        <h3>{course.title}</h3>
-                        <span className='inst-name'>{course.instructor}</span>
+                        <img alt={course['title']} src={course['image_240x135']} />
+                        <h3 className="fs-7 fw-bold">{course.title}</h3>
+                        <span className='inst-name'>{this.displayInstName()}</span>
                         <div className='rating'>
-                            <span>{course.rating[0]}</span>
+                            <span>{course['rating'].toPrecision(2)}</span>
                             <div className="stars">
-                                {this.displayStars(course.rating[0])}
+                                {this.displayStars(course['rating'])}
                             </div>
-                            <span className='usersNum'>{course.rating[1]}</span>
+                            <span className='usersNum'>({course['num_reviews'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")})</span>
                         </div>
                         <div>
-                            <span className="price">{`E£${course['new-price']}`}</span> <span className="prev-price">{`E£${course['original-price']}`}</span>
+                            <span className="price">{`E£${course['price']}`}</span> <span className="prev-price">{`E£${course['original_price']}`}</span>
                         </div>
                     </div>
-                </a>
+                </Link>
             </li>
 
         )
@@ -58,5 +72,4 @@ class Card extends Component {
     };
 }
 
-console.log(typeof Card)
 export default Card
