@@ -1,0 +1,148 @@
+/* 
+.single-course-page{
+    max-width: 118.4rem;
+    width:118.4rem;
+} */
+
+.single-course-page h1 {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.single-course-page .header-bar {
+    background-color: #1c1d1f;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    opacity: 100%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 16%);
+    color: white;
+    
+}
+
+.single-course-page h2 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem
+}
+
+
+.single-course-page .rating-num,
+.single-course-page .rating,
+.single-course-page .review-num {
+    margin-right: 0.3rem
+}
+
+.single-course-page p a .rating:first-child {
+    color: #f3ca8c;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.single-course-page .review-num {
+    color: #cec0fc;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+
+.single-course-page .student-num {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+.single-course-page .header-content
+{
+    max-width: 100%;
+    background-color: #1c1d1f;
+    color:white;
+}
+.single-course-page .header-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 43.8rem;
+    margin-left:13.5rem;
+
+}
+
+
+.single-course-page .header-content-container .path
+{
+    margin-top:1.8rem;
+    margin-bottom:0.8rem;
+}
+.single-course-page .header-content-container .path a{
+    color:#cec0fc;
+    font-weight: 700;
+    font-size:0.85rem;
+    margin-bottom:0.02rem;
+}
+.single-course-page .header-content-container .path span{
+    margin : 0.5rem
+}
+.single-course-page .header-content-container .path .first{
+    margin-left : 0rem
+}
+
+.single-course-page .header-content-container h1{
+    font-size:2.2rem;
+    margin-bottom:0.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02rem;
+}
+
+.single-course-page .header-content-container h3{
+    font-size:1.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02rem;
+    margin-bottom:0.9rem;
+}
+
+.single-course-page .header-content-container .stats
+{
+    margin-bottom:0.5rem
+}
+.single-course-page .header-content-container .singleStar
+{
+    font-size:0.7rem
+}
+
+.single-course-page .header-content-container .instructors{
+    margin-bottom: 0.6rem;
+}
+.single-course-page .header-content-container .inst-name{
+    color: #cec0fc;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.single-course-page .header-content-container .other-details
+{
+    margin-bottom:2.5rem
+}
+
+.single-course-page .header-content-container .other-details .last-mod,
+.single-course-page .header-content-container .other-details .lang,
+.single-course-page .header-content-container .other-details .subtitles
+{
+    margin-right:1rem;
+    font-size:0.9rem;
+}
+.single-course-page .header-content-container .other-icons
+{
+    margin-right:0.3rem
+}
+
+
+
+

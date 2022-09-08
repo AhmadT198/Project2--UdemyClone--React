@@ -6,11 +6,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function TabContent(props) {
-    const { id } = props
+    const { id, full } = props
     const tabTitle = props.subject[0]
     const tabData = props.subject[1]
 
-    const courseList = tabData['items'].map((data, idx) => <Card course={data} key={data['id']} idx={idx} />)
+    const courseList = tabData['items'].map((data, idx) => {
+        const urlTitle = data['published_title'];
+
+        
+        let fullCourseData;
+        if (full != undefined) {
+            if (full.hasOwnProperty('urlTitle')) { fullCourseData = full[urlTitle] }
+            else { fullCourseData = full['pythonforbeginners'] }
+        }
+
+        return <Card course={data} key={data['id']} full={fullCourseData} idx={idx} />
+    }
+    )
 
 
     const makeCarouselSlides = () => {
@@ -39,19 +51,19 @@ function TabContent(props) {
                     </div>
 
                     <ul id="courses-list" className="p-0">
-                        <div id="carouselExampleIndicators" className="text-decoration-none carousel slide w-100" data-bs-interval="false">
+                        <div id={`${tabTitle}`} className="text-decoration-none carousel slide w-100" data-bs-interval="false">
 
                             <div className="carousel-inner">
                                 {makeCarouselSlides()}
                             </div>
                             <button
                                 className="border border-light prevBtnLeft carousel-control-prev btnHeight CustomTop btnWidth ms-1 rounded-circle"
-                                type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                type="button" data-bs-target={`#${tabTitle}`} data-bs-slide="prev">
                                 <span aria-hidden="true"><FontAwesomeIcon icon="fa-solid fa-chevron-left" size="xl" /></span>
                             </button>
                             <button
                                 className="border border-light carousel-control-next btnHeight CustomTop btnWidth rounded-circle"
-                                type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                type="button" data-bs-target={`#${tabTitle}`} data-bs-slide="next">
                                 <span aria-hidden="true"><FontAwesomeIcon icon="fa-solid fa-chevron-right" size="xl" /></span>
                             </button>
                         </div>

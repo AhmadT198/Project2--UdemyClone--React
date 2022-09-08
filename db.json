@@ -12424,7 +12424,7 @@
                     "buyable_object_type": "course",
                     "published_time": "2017-01-31T00:39:13Z",
                     "objectives_summary": [
-                        "How to use the pencil to create a wide range of expressive and engaging lines marks.",
+                        "How to use the pencil to create a wide range of expressive and engaging lines marks.",
                         "How to infuse your line work with emotion that truly connect with a viewer.",
                         "How to draw objects in a way that give the viewer a sense of what it feels like to the touch."
                     ],
@@ -12770,8 +12770,8 @@
         }
     },
     "courses": {
-        "python": [
-            {
+        "python_res": {
+            "pythonforbeginners": {
                 "id": 1,
                 "header": {
                     "title": "Learn Python: The Complete Python Programming Course",
@@ -12783,12 +12783,13 @@
                         "Avinash Jain",
                         "The Codex"
                     ],
+                    "branches" : ["Development", "Programming Languages", "Python"],
                     "lastUpdated": {
                         "month": 9,
                         "year": 2015
                     },
-                    "lang": "en",
-                    "subtitles": "en"
+                    "lang": ["English"],
+                    "subtitles": ["English"]
                 },
                 "sidebar": {
                     "sale": true,
@@ -15604,7 +15605,7 @@
                     }
                 ]
             }
-        ],
-        "excel": []
+        },
+        "excel_res": {}
     }
 }

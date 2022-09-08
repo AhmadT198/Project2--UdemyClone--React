@@ -10,24 +10,25 @@ import {
 } from "react-router-dom";
 import HomePage from './components/HomePage';
 import NavBar from './components/NavBar';
-import SingleCoursePage from './components/SingleCoursePage'
+import SingleCoursePage from './components/SingleCourePage/SingleCoursePage'
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe,faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-library.add(faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft)
+import { faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe,faChevronRight, faChevronLeft,faCircleExclamation, faClosedCaptioning } from '@fortawesome/free-solid-svg-icons'
+library.add(faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning)
 
 
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <BrowserRouter>
     <NavBar />
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/course/:courseId" element={<SingleCoursePage />} />
+      <Route path="/course/:courseUrl" element={<SingleCoursePage />} />
 
     </Routes>
   </BrowserRouter>

@@ -44,11 +44,11 @@ class Card extends Component {
     }
 
     render() {
-        const { course, idx } = this.props
+        const { course, idx,full } = this.props
         return (
 
             <li className={`course${idx}`} key={course['id']}>
-                <Link to={course['url']}>
+                <Link to={course['url']} state={full}>
                     <div className='singleCourse'>
                         <img alt={course['title']} src={course['image_240x135']} />
                         <h3 className="fs-7 fw-bold">{course.title}</h3>

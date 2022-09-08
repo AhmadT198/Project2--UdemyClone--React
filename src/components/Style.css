@@ -14,33 +14,32 @@ body {
     padding: 0;
     height: 300rem;
     display: flex;
-    ;
     flex-direction: column;
     justify-content: start;
     background-color: white;
 }
 
-ul,
-h1,
-h2,
-h3 {
+ ul,
+ h1,
+ h2,
+ h3 {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-h1 {
+ h1 {
     font-size: 2.3rem;
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
 }
 
-a {
+ a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+ a:hover {
     text-decoration: none;
     color: black;
 }
@@ -76,8 +75,11 @@ nav {
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     padding: 10px 24px;
     font-size: 0.9em;
-    z-index: 10000;
+    z-index: 1001;
     position: relative;
+    background-color: white;
+    width:100%;
+    max-width: 100%;
 }
 
 nav .menu,
@@ -185,7 +187,7 @@ nav a:last-child {
 
 /*********************************************************************************** Header Styling ********************************************************/
 
-header {
+.home-page header {
     display: flex;
     justify-content: end;
     background-color: #f8f9fb;
@@ -195,7 +197,7 @@ header {
     margin: auto
 }
 
-header img {
+.home-page header img {
     width: 402px;
     height: 478px;
     justify-self: end;
@@ -241,7 +243,7 @@ p {
 
 /*********************************************************************************** Main Sections Styling ********************************************************/
 
-main {
+.home-page main {
     width: 83.75rem;
     margin: auto;
     margin-top: 2rem;
@@ -352,7 +354,7 @@ main {
     flex-wrap: wrap;
 }
 
-#carouselExampleIndicators button {
+.carousel button {
     background-color: black;
     opacity: 100%;
     border: 0 !important

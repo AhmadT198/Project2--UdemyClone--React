@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Card from './Card.js'
 import Tab from './Tab.js'
 import TabContent from './TabContent.js'
 
@@ -27,6 +26,7 @@ class Courses extends Component {
                 this.setState({ post: data, isLoading: false, error: "" })
                 this.homePageData = data['HomePage']
                 this.homePageData = Object.entries(this.homePageData)
+                console.log(data['courses']['python'])
             })
             .catch((error) => {
                 this.setState({ isLoading: false, error: error })
@@ -35,16 +35,23 @@ class Courses extends Component {
 
     displayTabs() {
         const tabList = this.homePageData.map((subject, idx) => <Tab key={subject[1]['id']} subject={subject} id={idx} />)
-        console.log(tabList)
 
         return <>{tabList}</>
     }
 
-    displayTabContent()
-    {
-        const contentPerTab = this.homePageData.map((subject,idx) => <TabContent key={subject[1]['id']} subject={subject} id={idx} />)
+    displayTabContent() {
+        const contentPerTab = this.homePageData.map((subject, idx) =>
+            {
+                let fullData = {};
+                if(this.state.post['courses'][subject[0]] != undefined 
+                && Object.keys(this.state.post['courses'][subject[0]]).length != 0){fullData = this.state.post['courses'][subject[0]]}
+                else {fullData = this.state.post['courses']['python_res'] }
+                return <TabContent key={subject[1]['id']} subject={subject} id={idx} full={fullData} />
+            }
+        )
         return <>{contentPerTab}</>
     }
+
 
     render() {
 
@@ -61,14 +68,14 @@ class Courses extends Component {
                     (<>
                         {
                             this.state.error ? (
-                                <div>{this.state.error}</div>
+                                <div>Error</div>
                             ) :
                                 (
                                     <>
                                         <ul className="nav nav-tabs border-0" id="myTab" role="tablist">
                                             {this.displayTabs()}
                                         </ul>
-                                        <div class="tab-content w-100" id="myTabContent">
+                                        <div className="tab-content w-100" id="myTabContent">
                                             {this.displayTabContent()}
                                         </div>
                                     </>

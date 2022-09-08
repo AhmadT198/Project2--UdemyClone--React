@@ -4,17 +4,24 @@ import Header from './Header'
 
 
 class HomePage extends Component {
+
+ 
+
   render() {
+
+    // console.log("homepage render => " , this.state.full)
     return (
       <>
-        <Header />
-        <main>
-          <Courses />
+        <div className='home-page'>
+          <Header />
+          <main>
+            <Courses />
 
-        </main>
-
+          </main>
+        </div>
       </>
     )
+
   }
 }
 
