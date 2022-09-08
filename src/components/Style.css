@@ -19,27 +19,27 @@ body {
     background-color: white;
 }
 
- ul,
- h1,
- h2,
- h3 {
+ul,
+h1,
+h2,
+h3 {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
- h1 {
+h1 {
     font-size: 2.3rem;
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
 }
 
- a {
+a {
     text-decoration: none;
     color: black;
 }
 
- a:hover {
+a:hover {
     text-decoration: none;
     color: black;
 }
@@ -68,7 +68,7 @@ button[aria-selected='true'] {
 
 /*********************************************************************************** Nav bar Styling ********************************************************/
 
-nav {
+.main-nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -78,17 +78,17 @@ nav {
     z-index: 1001;
     position: relative;
     background-color: white;
-    width:100%;
+    width: 100%;
     max-width: 100%;
 }
 
-nav .menu,
-nav .search-alternate {
+.main-nav .menu,
+.main-nav .search-alternate {
     /* hidden icons for smaller screens */
     display: none;
 }
 
-nav img {
+.main-nav img {
     cursor: pointer;
     width: 91px;
     height: 34px;

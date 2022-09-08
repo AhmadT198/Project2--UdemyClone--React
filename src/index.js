@@ -14,11 +14,11 @@ import SingleCoursePage from './components/SingleCourePage/SingleCoursePage'
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe,faChevronRight, faChevronLeft,faCircleExclamation, faClosedCaptioning } from '@fortawesome/free-solid-svg-icons'
-library.add(faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning)
+import { faFolder, faFile, faBell } from '@fortawesome/free-regular-svg-icons'
+import { faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+library.add(faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay)
 
-
-
+library.add(faFolder, faFile, faBell)
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

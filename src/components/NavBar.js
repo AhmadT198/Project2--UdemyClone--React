@@ -7,7 +7,7 @@ class NavBar extends Component {
     render() {
         return (
             <>
-                <nav>
+                <nav className='main-nav'>
                     <FontAwesomeIcon icon="fa-solid fa-bars" className="menu" />
 
                     <img alt="Logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" />
