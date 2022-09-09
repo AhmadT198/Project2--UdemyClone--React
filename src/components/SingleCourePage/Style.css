@@ -1,9 +1,7 @@
-/* 
-.single-course-page{
-    max-width: 118.4rem;
-    width:118.4rem;
-} */
 
+html {
+    scroll-behavior: smooth;
+  }
 .single-course-page h1 {
     font-family: 'Open Sans', sans-serif;
 
@@ -16,7 +14,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 1001;
     opacity: 100%;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 16%);
     color: white;
@@ -179,8 +177,8 @@
     animation-play-state: running;
     animation-duration: 250ms;
 
-
-    top: 5.05rem;
+    z-index:1000;
+    top: 5rem;
     border-bottom: 0;
     box-shadow: 0 4px 8px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 24%);
     width: 100%
@@ -296,7 +294,7 @@
     animation-play-state: running;
     animation-duration: 250ms;
 
-    z-index: 100;
+    z-index: 1001;
     top: 1rem;
 }
 .single-course-page .side-bar .bar-body{
@@ -359,13 +357,13 @@
     font-weight: 700;
 }
 
-.single-course-page .side-bar button.add-to-cart
+.single-course-page  button.add-to-cart
 {
     color: white;
     background-color: #a435f0;
 }
 
-.single-course-page .side-bar button.buy-now
+.single-course-page  button.buy-now
 {
     color:black;
     border: 1px solid black;
@@ -374,22 +372,22 @@
     width:100%;
 }
 
-.single-course-page .side-bar button.add-to-cart:hover
+.single-course-page  button.add-to-cart:hover
 {
     background-color: #8710d8;
 }
 
-.single-course-page .side-bar button.buy-now:hover
+.single-course-page  button.buy-now:hover
 {
     background-color: rgba(0,0,0,.04);
 }
 
 .single-course-page .bar-body p
 {
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     font-size:0.8rem;
-    margin-bottom:1.2rem;
+    margin-bottom:0.3rem;
 }
 
 
@@ -403,13 +401,14 @@
 
 .single-course-page .bar-body .includes-list
 {
-    margin-bottom: 0.7rem;;
+    margin-bottom: 0.7rem;
+
 }
 .single-course-page .bar-body .includes-list li
 {
     margin-bottom:0.3rem;
     font-size:0.9rem;
-    font-weight:500;
+    font-weight:400;
 }
 
 .single-course-page .bar-body .includes-list .icon-container
@@ -427,7 +426,7 @@
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom:1.3rem;
+    margin-bottom:0.6rem;
 }
 
 .single-course-page .bar-body .sidebar-links a
@@ -450,8 +449,12 @@
     color: black;
     margin-top: 1.4rem;
     margin-bottom:0.5rem;
+    font-size:1.7rem;
 }
 
+.single-course-page .side-bar .udemy-business h2{
+    font-size:1.2rem;
+}
 .single-course-page .side-bar .udemy-business p
 {
     font-size:0.9rem;
@@ -473,6 +476,7 @@
 {
     margin-top:2rem;
     border: 1px solid #d1d7dc;
+    
     padding:1.8rem 1.4rem;
 }
 .single-course-page .what-youll-learn h2
@@ -493,7 +497,8 @@
 .single-course-page .what-youll-learn ul li
 {
     width:50%;
-    font-size:0.9rem;
+    font-size:0.8rem;
+    font-weight:400;
     margin-bottom: 0.3rem;
 }
 
@@ -501,4 +506,287 @@
 {
     margin-right:1rem;
     font-size:0.9rem;
+}
+
+
+.single-course-page .course-content .sections-intro
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0.5rem
+}
+.single-course-page .close-expand-all
+{
+    border:0;
+    background-color: transparent;
+    color:#5624d0;
+    font-weight:700;
+    font-size:0.9rem
+}
+.accordion-item
+{
+    z-index:-1;
+}
+.accordion-button::after
+{
+    width:0;
+    height:0;
+}
+
+
+
+.accordion-item button
+{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f7f9fa !important;
+
+}
+.accordion-item  h2
+{   
+    margin:0 !important;
+    font-size:1rem !important;
+
+    
+}
+
+.accordion-item button.accordion-button div
+{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-button:not(.collapsed)
+{
+    color:black !important;
+}
+.accordion-item .acc-icon
+{
+    font-size:0.7rem;
+    margin-right:2rem;
+    vertical-align: center;
+}
+
+.accordion-body ul li 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0.8rem;
+    font-weight:400;
+}
+
+.accordion-body ul li .lesson-icon
+{
+    margin-left:0.3rem;
+    margin-right:0.7rem;
+    font-size:0.8rem;
+}
+
+.lesson-link
+{
+    color:#5624d0;
+    text-decoration: underline;
+}
+
+.single-course-page .lesson-details a
+{
+    margin-right:2rem;
+}
+
+.single-course-page .lesson-details 
+{
+    color:#6a6f73;
+}
+
+.rot
+{
+    transform: rotate(180deg);
+    transition: transform 250ms;
+}
+
+
+
+.single-course-page .req ul li
+{
+    list-style-type:disc;
+    list-style-position: inside;
+    margin-bottom:0.4rem
+}
+
+.single-course-page .req h2{
+    margin-bottom: 1rem;
+}
+
+
+.single-course-page .desc ul li 
+{
+    
+    list-style-type:disc;
+    list-style-position: inside;
+    margin-bottom:0.8rem
+}
+.single-course-page .desc ul li p{
+    display:inline;
+}
+
+.single-course-page .content-container
+{
+    position: relative;
+    max-height:12.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+}
+
+.single-course-page .white-blur
+{
+    position: absolute;
+    width:100%;
+    height:40%;
+    background: linear-gradient(180deg,rgba(28,29,31,0) 0%,rgb(255 255 255 / 90%) 100%);
+    bottom:0;
+    left:0;
+}
+
+
+
+.single-course-page .instructors .inst-title
+{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight:700;
+    border-bottom: 1px solid #5624d0;
+    text-decoration: none;
+    color:#5624d0;
+    margin-bottom: 0.5rem;
+}
+
+
+.single-course-page .instructors .inst-title:hover
+{
+    color:#401b9c;
+    border-bottom: 1px solid #401b9c;
+
+}
+
+.single-course-page .instructors .inst-intro
+{
+    font-size: 1rem;
+    color:#6a6f73;
+}
+
+.single-course-page .instructors .profile
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0;
+}
+.single-course-page .instructors .profile img
+{
+    width:7rem;
+    height:7rem;
+    border-radius: 6rem;
+}
+.single-course-page .instructors .profile ul
+{
+    margin-left:1rem;
+}
+.single-course-page .instructors .profile ul li
+{
+    margin-bottom:0.7rem;
+    font-size:0.9rem;
+}
+
+.single-course-page .instructors .profile .inst-icon
+{
+    font-size:0.8rem;
+    margin-right:1rem;
+}
+.single-course-page .instructors .single-instructor
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top:1rem;
+    margin-bottom:2rem;
+}
+
+.single-course-page .feedback-container
+{
+    display: flex;
+    width:100%;
+}
+
+
+.single-course-page .feedback-container .meters
+{
+    width:100%;
+    padding-left:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.single-course-page .feedback-container  .single-rating
+{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+}
+
+.single-course-page .feedback-container  .progress
+{
+    height:0.7rem;
+    width:100%;
+    border-radius:0;
+}
+
+.single-course-page .feedback-container  .progress-bar
+{
+    background-color:grey !important;
+}
+
+.single-course-page .feedback-container  .single-rating .star-count
+{
+    width:8rem;
+    margin-left:1rem;
+    color:#e59819;
+}
+.single-course-page .feedback-container  .single-rating .feedback-percent
+{
+    width:3rem;
+    color:#5624d0;
+    text-decoration: underline;
+
+}
+
+.feedback-rate
+{
+    color:#b4690e;
+    width:7rem;
+    text-align: center;
+}
+.feedback-rate h1{
+    font-size:4.5rem;
+    font-weight:700;
+}
+
+.feedback-rate div
+{
+    color:#e59819;
+    font-size: 1.1rem;
+}
+.feedback-rate p{
+    font-size:0.8rem;
+    margin-top:0.3rem;
+    font-weight:700
 }

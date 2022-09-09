@@ -40,14 +40,13 @@ class Courses extends Component {
     }
 
     displayTabContent() {
-        const contentPerTab = this.homePageData.map((subject, idx) =>
-            {
-                let fullData = {};
-                if(this.state.post['courses'][subject[0]] != undefined 
-                && Object.keys(this.state.post['courses'][subject[0]]).length != 0){fullData = this.state.post['courses'][subject[0]]}
-                else {fullData = this.state.post['courses']['python_res'] }
-                return <TabContent key={subject[1]['id']} subject={subject} id={idx} full={fullData} />
-            }
+        const contentPerTab = this.homePageData.map((subject, idx) => {
+            let fullData = {};
+            if (this.state.post['courses'][subject[0]] != undefined
+                && Object.keys(this.state.post['courses'][subject[0]]).length != 0) { fullData = this.state.post['courses'][subject[0]] }
+            else { fullData = this.state.post['courses']['python_res'] }
+            return <TabContent key={subject[1]['id']} subject={subject} id={idx} full={fullData} />
+        }
         )
         return <>{contentPerTab}</>
     }
@@ -63,7 +62,9 @@ class Courses extends Component {
                 <p className="mb-0">Choose from 185,000 online video courses with new additions published every month</p>
 
 
-                {(this.state.isLoading ? (<div>Loading...</div>)
+                {(this.state.isLoading ? (<div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>)
                     :
                     (<>
                         {

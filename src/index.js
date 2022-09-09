@@ -14,11 +14,11 @@ import SingleCoursePage from './components/SingleCourePage/SingleCoursePage'
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFolder, faFile, faBell } from '@fortawesome/free-regular-svg-icons'
-import { faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
-library.add(faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay)
+import { faStar as emptyStar, faFolder, faFile, faBell } from '@fortawesome/free-regular-svg-icons'
+import { faUser,faMedal,faChevronDown, faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+library.add(faUser, faMedal, faChevronDown, faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay)
 
-library.add(faFolder, faFile, faBell)
+library.add(emptyStar, faFolder, faFile, faBell)
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

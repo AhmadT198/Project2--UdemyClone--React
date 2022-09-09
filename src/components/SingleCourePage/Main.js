@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Accordion from './Accordion'
+import CollapsableText from './CollapsableText'
+import Instructor from './Instructor'
+import StudentFeedback from './StudentFeedback'
 
 
 export class Main extends Component {
@@ -12,6 +16,8 @@ export class Main extends Component {
             sideBarClass: ""
         }
     }
+
+
     scorllHandler = () => {
         // console.log(window.scrollY)
         if (window.scrollY > 390) {
@@ -31,9 +37,10 @@ export class Main extends Component {
         window.addEventListener('scroll', this.scorllHandler)
     }
 
+
+
     render() {
-        const { data } = this.props
-        console.log(this.state.sideBarClass)
+        const { data,displayStars } = this.props
         return (
             <main>
 
@@ -110,18 +117,47 @@ export class Main extends Component {
                         </div>
                     </div>
                 </section>
+
+
                 <section className='what-youll-learn'>
                     <h2>What you'll learn</h2>
                     <ul>
                         {
-                            data['curriculum']['whatYoullLearn'].map((point,idx) => <li><FontAwesomeIcon className='check-icon' icon="fa-solid fa-check" />{point}</li>)
+                            data['curriculum']['whatYoullLearn'].map((point, idx) => <li><FontAwesomeIcon className='check-icon' icon="fa-solid fa-check" />{point}</li>)
                         }
-                        
+
                     </ul>
                 </section>
-                <section className='course-content'>
 
+
+
+                <section className='course-content'>
+                    <h2>Course Content</h2>
+                    <Accordion data={data['curriculum']} />
                 </section>
+
+
+                <section className='req'>
+                    <h2>Requirements</h2>
+                    <ul>
+                        {data['req'].map((r) => <li>{r}</li>)}
+                    </ul>
+                </section>
+
+
+                <section className='desc'>
+                    <h2>Description</h2>
+                    <CollapsableText content={data['description']} />
+                </section>
+
+                <section className='instructors'>
+                    <h2>Instructors</h2>
+                    {
+                        data['instructors'].map((data) => <Instructor data={data} />)
+                    }
+                </section>
+
+                <StudentFeedback data={data} displayStars={displayStars} />
             </main>
         )
     }
