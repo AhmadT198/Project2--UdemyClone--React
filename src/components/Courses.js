@@ -23,6 +23,7 @@ class Courses extends Component {
         fetch('https://ahmadt198.github.io/Data/db.json')
             .then(res => res.json())
             .then((data) => {
+                // console.log(data)
                 this.setState({ post: data, isLoading: false, error: "" })
                 this.homePageData = data['HomePage']
                 this.homePageData = Object.entries(this.homePageData)
@@ -66,6 +67,7 @@ class Courses extends Component {
 
         const contentPerTab = modHomePageData.map((subject, idx) => {
             let fullData = {};
+            // console.log(subject)
             if (this.state.post['courses'][subject[0]] != undefined
                 && Object.keys(this.state.post['courses'][subject[0]]).length != 0) { fullData = this.state.post['courses'][subject[0]] }
             else { fullData = this.state.post['courses']['python_res'] }

@@ -54,8 +54,11 @@ class Card extends Component {
         const pop = document.getElementById(this.props.course.id);
         pop.classList.add('d-none')
     }
+
+    
     render() {
         const { course, idx, full } = this.props
+        console.log(course['url'])
         return (
             <>
                 <li onMouseOver={this.hoverHandler} onMouseLeave={this.leaveHandler} className={`course${idx}`} key={course['id']}>

@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 
@@ -14,7 +15,7 @@ html {
 }
 
 
-.single-course-page .header-bar {
+.single-course-page .header-banner {
     background-color: #1c1d1f;
     padding: 1rem 1.5rem;
     position: fixed;
@@ -63,43 +64,60 @@ html {
 }
 
 .single-course-page .header-content {
-    max-width: 100%;
+    width: 100%;
     background-color: #1c1d1f;
     color: white;
 }
 
-.single-course-page .header-content-container {
+.single-course-page main section {
+    margin-left: 3rem;
+    width: 46.75rem;
+    /* margin:auto; */
+}
+
+.main-container {
+    width: fit-content;
+    margin: auto;
+    width: 73.8rem;
+}
+
+.single-course-page .header-container {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    max-width: 43.8rem;
-    margin-left: 13.5rem;
+    /* max-width: 43.8rem; */
+    margin: auto;
+    width: 73.8rem;
 
 }
 
+.single-course-page .general-container {
+    width: 46.8rem;
+    margin-left: 3rem;
+}
 
-.single-course-page .header-content-container .path {
+.single-course-page .header-container .path {
     margin-top: 1.8rem;
     margin-bottom: 0.8rem;
 }
 
-.single-course-page .header-content-container .path a {
+.single-course-page .header-container .path a {
     color: #cec0fc;
     font-weight: 700;
     font-size: 0.85rem;
     margin-bottom: 0.02rem;
 }
 
-.single-course-page .header-content-container .path span {
+.single-course-page .header-container .path span {
     margin: 0.5rem
 }
 
-.single-course-page .header-content-container .path .first {
+.single-course-page .header-container .path .first {
     margin-left: 0rem
 }
 
-.single-course-page .header-content-container h1 {
+.single-course-page .header-container h1 {
     font-size: 2.2rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
@@ -107,51 +125,50 @@ html {
     letter-spacing: -0.02rem;
 }
 
-.single-course-page .header-content-container h3 {
+.single-course-page .header-container h3 {
     font-size: 1.2rem;
     line-height: 1.2;
     letter-spacing: -0.02rem;
     margin-bottom: 0.9rem;
 }
 
-.single-course-page .header-content-container .stats {
+.single-course-page .header-container .stats {
     margin-bottom: 0.5rem
 }
 
-.single-course-page .header-content-container .singleStar {
+.single-course-page .header-container .singleStar {
     font-size: 0.7rem
 }
 
-.single-course-page .header-content-container .instructors {
+.single-course-page .header-container .instructors {
     margin-bottom: 0.6rem;
 }
 
-.single-course-page .header-content-container .inst-name {
+.single-course-page .header-container .inst-name {
     color: #cec0fc;
     text-decoration: underline;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
-.single-course-page .header-content-container .other-details {
+.single-course-page .header-container .other-details {
     margin-bottom: 2.5rem
 }
 
-.single-course-page .header-content-container .other-details .last-mod,
-.single-course-page .header-content-container .other-details .lang,
-.single-course-page .header-content-container .other-details .subtitles {
+.single-course-page .header-container .other-details .last-mod,
+.single-course-page .header-container .other-details .lang,
+.single-course-page .header-container .other-details .subtitles {
     margin-right: 1rem;
     font-size: 0.9rem;
 }
 
-.single-course-page .header-content-container .other-icons {
+.single-course-page .header-container .other-icons {
     margin-right: 0.3rem
 }
 
 
 
-
-.single-course-page main .nav-rel {
+.single-course-page main .border-container {
     border-bottom: 1px solid #d1d7dc;
 
 }
@@ -177,12 +194,11 @@ html {
     animation-fill-mode: forwards;
     animation-play-state: running;
     animation-duration: 250ms;
-
+    width: 100%;
     z-index: 1000;
     top: 5rem;
     border-bottom: 0;
     box-shadow: 0 4px 8px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 24%);
-    width: 100%
 }
 
 .single-course-page main .nav-container {
@@ -191,7 +207,7 @@ html {
     align-items: center;
     flex-direction: row;
     max-width: 43.8rem;
-    margin-left: 13.5rem
+    margin-left: 3rem
 }
 
 
@@ -203,7 +219,8 @@ html {
     color: #6a6f73;
     font-weight: 700;
     font-size: 0.86rem;
-    height: 3rem
+    height: 3rem;
+    margin-bottom: 0;
 }
 
 .single-course-page main .nav-container button:hover {
@@ -216,22 +233,26 @@ html {
     position: relative;
 }
 
-.single-course-page .side-bar {
-    width: 21.25rem;
-    position: absolute;
+.single-course-page .side-bar-container {
     top: 6.6rem;
-    right: 13.4rem;
-    background-color: white;
-
+    width: fit-content;
+    margin-left: 51rem;
+    position: absolute;
 
 }
 
-.single-course-page .side-bar .course-img {
+.single-course-page .side-bar {
+    width: 21.25rem;
+    background-color: white;
+    margin: auto;
+}
+
+.single-course-page .course-img {
     width: 100%;
     border: 1px solid white;
 }
 
-.single-course-page .side-bar .image-shadow {
+.single-course-page .image-shadow {
     background: linear-gradient(180deg, rgba(28, 29, 31, 0) 0%, rgba(28, 29, 31, 0.9) 100%);
     position: absolute;
     background-color: transparent;
@@ -241,7 +262,7 @@ html {
     right: 0.05rem
 }
 
-.single-course-page .side-bar .bg {
+.single-course-page .bg {
     position: absolute;
     top: 5rem;
     right: 9rem;
@@ -249,7 +270,7 @@ html {
 
 }
 
-.single-course-page .side-bar .play-icon {
+.single-course-page .play-icon {
     font-size: 4.2rem;
     right: 8.5rem;
     top: 4rem;
@@ -257,12 +278,12 @@ html {
     position: absolute;
 }
 
-.single-course-page .side-bar .image-container {
+.single-course-page .image-container {
     position: relative;
     display: block;
 }
 
-.single-course-page .side-bar .image-container h2 {
+.single-course-page .image-container h2 {
     position: absolute;
     font-size: 1rem;
     color: white;
@@ -270,11 +291,14 @@ html {
     right: 5.75rem;
 }
 
+.single-course-page .side-bar,
+.sidebar-container-rel {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+
+}
 
 .single-course-page .side-bar .sidebar-container-rel {
     position: relative;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
-
 }
 
 .single-course-page .side-bar .sidebar-container-fixed {
@@ -295,27 +319,27 @@ html {
 }
 
 .single-course-page .side-bar .bar-body {
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 
 
-.single-course-page .bar-body .price-container {
+.price-container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.single-course-page .bar-body .price-container .price {
+.price-container .price {
     font-size: 2rem;
     font-weight: 700;
     margin-right: 0.55rem;
     margin-bottom: 0.2rem;
 }
 
-.single-course-page .bar-body .price-container .original-price {
+.price-container .original-price {
     color: #6a6f73;
     font-size: 1rem;
     font-weight: 600;
@@ -325,25 +349,25 @@ html {
 
 }
 
-.single-course-page .bar-body .price-container .sale-amount {
+.price-container .sale-amount {
     color: black;
     font-weight: 600;
     font-size: 1rem;
 }
 
-.single-course-page .bar-body .time-left {
+.time-left {
     color: #b32d0f;
     font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-.single-course-page .bar-body .time-left span {
+.time-left span {
     font-weight: 700;
     margin-left: 0.3rem;
 }
 
-.single-course-page .side-bar button {
+button {
     border: 0;
     padding: 0.8rem 2rem;
     margin-bottom: 0.6rem;
@@ -406,14 +430,14 @@ button.add-to-cart {
 }
 
 
-.single-course-page .bar-body .sidebar-links {
+.single-course-page .sidebar-links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 0.6rem;
 }
 
-.single-course-page .bar-body .sidebar-links a {
+.single-course-page .sidebar-links a {
     color: black;
     border-bottom: 1px solid black;
     font-weight: 700;
@@ -447,11 +471,7 @@ button.add-to-cart {
     padding: 0.5rem 2rem;
 }
 
-.single-course-page main section {
-    margin-left: 13.5rem;
-    width: 43.75rem;
 
-}
 
 .single-course-page .what-youll-learn {
     margin-top: 2rem;
@@ -475,9 +495,10 @@ button.add-to-cart {
 
 .single-course-page .what-youll-learn ul li {
     width: 50%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    display: flex;
 }
 
 .single-course-page .what-youll-learn .check-icon {
@@ -498,7 +519,7 @@ button.add-to-cart {
     background-color: transparent;
     color: #5624d0;
     font-weight: 700;
-    padding-left: 0;
+    padding: 0;
     font-size: 0.9rem
 }
 
@@ -519,6 +540,7 @@ button.add-to-cart {
     flex-direction: row;
     justify-content: space-between;
     background-color: #f7f9fa !important;
+    margin-bottom: 0;
 
 }
 
@@ -768,10 +790,10 @@ input:focus {
     display: flex;
 }
 
-.reviews
-{
-    margin-bottom:4rem
+.reviews {
+    margin-bottom: 4rem
 }
+
 .review-search {
     display: flex;
     justify-content: space-between;
@@ -874,7 +896,7 @@ input:focus {
 }
 
 .single-review span {
-    display: inline-block;
+    display: block;
     font-size: 0.6rem;
     margin-bottom: 0.4rem;
 }
@@ -892,6 +914,7 @@ input:focus {
     font-size: 1.1rem;
     width: 2.4rem;
     height: 2.4rem;
+    padding:0;
     margin-right: 0.4rem;
 }
 
@@ -913,4 +936,180 @@ input:focus {
 .reviews button.white-button {
     padding: 0.5rem 0;
     margin-top: 1rem;
+}
+
+.media-query, .media-query-header-banner {
+    display: none
+}
+
+
+
+
+
+
+
+.header-content .image-container {
+    display: none;
+}
+
+
+
+/*----------------------------------------------Media queries ------------------------------------------------------------------------------*/
+
+
+@media (max-width:73.75rem) {
+
+    .single-course-page main section,
+    .nav-container,
+    .single-course-page .general-container {
+        width: 36.75rem;
+
+    }
+
+    .single-course-page .side-bar-container {
+        margin-left: 41rem;
+    }
+
+}
+
+@media (max-width:66.25rem) {
+
+    /*--------------------------------General Styling -------*/
+    .single-course-page main section,
+    .nav-container,
+    .single-course-page .general-container {
+        width: 36.75rem;
+        margin-left: 0;
+    }
+
+    .main-container,
+    .single-course-page .header-container {
+        width: fit-content;
+    }
+
+    /*------------------------------- No more fixed nav bar while scolling ------*/
+    .single-course-page main .nav-fixed {
+        position: relative;
+        top: 0;
+        box-shadow: none;
+    }
+
+    /*------------------------------ Header banner is fixed at the bottom not the top ------------*/
+    .single-course-page .header-banner {
+        top: auto;
+        bottom: 0;
+    }
+
+
+    /*------------------------------ hide the side bar ------------------------------------------*/
+    .side-bar {
+        display: none;
+    }
+
+
+    /*--------------------------------------Header styling ------------------------------*/
+
+    .single-course-page .header-content .path {
+        margin-top: 0.8rem;
+    }
+
+    .header-content .image-container {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+
+    .header-content .image-container .course-img {
+        border: 0;
+        width: 99.5%;
+    }
+
+    .header-content .image-container .image-shadow {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-content .image-container .play-icon {
+        top: 40%;
+        right: 45%;
+    }
+
+    .header-content .image-container .bg {
+        top: 45%;
+        right: 46%;
+    }
+
+    .header-content .image-container h2 {
+        right: 37%;
+    }
+
+    .single-course-page .header-container .other-details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.8rem;
+    }
+
+    .single-course-page .header-container .other-details span {
+        margin-bottom: 0.4rem;
+    }
+
+    .media-query {
+        display: block;
+    }
+
+    .media-query .price-container .price {
+        margin-bottom: 0;
+
+    }
+
+    .media-query .sale-amount,
+    .media-query .time-left {
+        color: #e2330c
+    }
+
+    .media-query .add-to-cart {
+        width: 100%;
+        margin-bottom: 1.3rem;
+    }
+
+    .media-query .dets {
+        font-weight: 400;
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .media-query .sidebar-links {
+        margin: 1.8rem 0;
+    }
+
+    .media-query .sidebar-links a {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+    .header-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .media-query-header-banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        
+    }
+
+    .media-query-header-banner button.white-button{
+        padding:0.7rem 0.5rem;
+    }
+    .media-query-header-banner button.white-button:hover{
+        background-color: rgb(225, 222, 222);
+    }
+    .media-query-header-banner .price-container h1
+    {
+        font-size:1.4rem;
+    }
 }

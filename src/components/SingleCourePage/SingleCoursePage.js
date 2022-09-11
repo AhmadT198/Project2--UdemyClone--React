@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function SingleCoursePage(props) {
     const location = useLocation();
     const data = location.state;
-
+    console.log(data)
 
     const displayStars = (rate, full) => {
         const result = [];
@@ -42,10 +42,12 @@ function SingleCoursePage(props) {
 
     }
 
+    
+
     return (
         <>
             <div className='single-course-page'>
-                <Header data={data['header']} displayStars={displayStars} />
+                <Header data={data} displayStars={displayStars} />
                 <Main data={data} displayStars={displayStars} />
             </div>
         </>

@@ -4,9 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 
 class NavBar extends Component {
-   
-    GoBack = () =>
-    {
+
+    GoBack = () => {
 
     }
 
@@ -31,9 +30,10 @@ class NavBar extends Component {
 
                     <a href="#" className="navOption teach">Teach on Udemy</a>
 
-                    <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" className="search-alternate" size="lg" />
-                    <a href="#" className="navOption shopping-cart"><FontAwesomeIcon icon="fa-solid fa-cart-shopping" size="lg" /></a>
-
+                    <div className=''>
+                        <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" className="search-alternate" size="lg" />
+                        <a href="#" className="navOption shopping-cart"><FontAwesomeIcon icon="fa-solid fa-cart-shopping" size="lg" /></a>
+                    </div>
                     <a href="#" className="navOption navBtn">Log in</a>
 
                     <a href="#" className="navOption navBtn sign-up">Sign Up</a>

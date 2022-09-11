@@ -12,15 +12,15 @@ function TabContent(props) {
 
     const courseList = tabData['items'].map((data, idx) => {
         const urlTitle = data['published_title'];
-
+        // console.log(urlTitle)
 
         let fullCourseData;
         if (full != undefined) {
-            if (full.hasOwnProperty('urlTitle')) { fullCourseData = full[urlTitle] }
-            else { fullCourseData = full['pythonforbeginners'] }
+            if (full.hasOwnProperty(urlTitle)) { fullCourseData = full[urlTitle] }
+            else { fullCourseData = full[Object.keys(full)[0]] }
         }
-
         return <Card course={data} key={data['id']} full={fullCourseData} idx={idx} />
+        return <></>;
     }
     )
 
