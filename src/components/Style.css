@@ -12,7 +12,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    height: 300rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -46,7 +45,7 @@ a:hover {
 
 /*-----------------------------------------------------Custom made classes --------------------------------------------------------------------------------*/
 .CustomTop {
-    top: 15% !important;
+    top: 54% !important;
 }
 
 .btnWidth {
@@ -57,8 +56,16 @@ a:hover {
     height: 3rem !important;
 }
 
-.prevBtnLeft {
-    left: -2rem !important;
+.prevBtnLeft
+{
+    left:0.4rem;
+    border:1px solid #c6c6c699 !important;
+
+}
+.nextBtnRight {
+    right: 2rem !important;
+    border: 1px solid #c6c6c699 !important;
+
     ;
 }
 
@@ -88,10 +95,9 @@ button[aria-selected='true'] {
     display: none;
 }
 
-.main-nav img {
-    cursor: pointer;
-    width: 91px;
-    height: 34px;
+.img-logo {
+    width: 5.6875rem;
+    height: 2.125rem;
 }
 
 .navOption {
@@ -201,7 +207,7 @@ nav a:last-child {
     width: 402px;
     height: 478px;
     justify-self: end;
-    position: relative;
+    /* position: relative; */
     max-width: 83.75rem;
     z-index: 0;
     right: 0;
@@ -313,6 +319,8 @@ p {
     max-width: 83.75rem;
     width: 100%;
     margin: auto;
+    position: relative;
+    margin-bottom:4rem;
 }
 
 
@@ -352,12 +360,23 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    position : static !important;
+
+}
+
+.carousel-inner, .carousel, .carousel-item{
+    position : static !important;
+
+}
+
+.course-details ul li
+{
+    position : static !important;
 }
 
 .carousel button {
     background-color: black;
     opacity: 100%;
-    border: 0 !important
 }
 
 
@@ -384,6 +403,13 @@ p {
     width: 100%;
     height: 100%;
     font-size: 0.9rem;
+
+}
+
+.singleCourse img
+{
+    border: 1px solid #d1d7dc;
+
 }
 
 .singleCourse img:hover {
@@ -446,4 +472,253 @@ p {
     background-color: #eceb98;
     font-weight: 600;
     margin-top: 0.5rem;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------ Summary-popup Styling ----------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.pop-container
+{
+    width:26.3rem;
+    height:auto;
+    position: absolute;
+    z-index: 1000;
+
+}
+.pop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    z-index:1000;
+    background-color: white;
+    border: 1px solid #d1d7dc;
+    width:80%;
+    margin:auto;
+    padding:1.5rem;
+    box-shadow: 0 0 0 1px #d1d7dc, 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+
+    animation-name: fade-in;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 100ms;
+
+}
+.pop h2
+{
+    font-size:1.2rem;
+    width:20rem;
+    max-width:100%;
+    font-weight:700;
+}
+.pop h2,.pop .pop-last-update,.pop .pop-intro,.pop .pop-what-youll-learn li,.pop-what-youll-learn
+
+{
+    margin-bottom: 0.5rem;
+}
+.pop .pop-last-update
+{
+    color:#1e6055;
+    font-size:0.7rem;
+    font-weight:400;
+}
+.pop .pop-last-update span{font-weight:700}
+
+.pop .pop-details
+{
+    color:#6a6f73;
+    font-size:0.8rem;
+    font-weight:400;
+}
+
+.pop .pop-details span::after
+{
+    content:'\25CF';
+    font-size:0.3rem;
+    vertical-align: middle;
+    margin-left:0.25rem;
+}
+.pop .pop-intro,.pop .pop-what-youll-learn, .pop-icon
+{
+    font-weight:400;
+    font-size:0.88rem;
+    padding-top:0.3rem;
+}
+.pop .pop-what-youll-learn li
+{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom:0.4rem;
+}
+.pop .pop-what-youll-learn .pop-icon
+{
+    margin-right:1rem;
+}
+
+.pop .pop-buttons
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:0.4rem;
+    
+}
+.pop-buttons {width:100%}
+.pop-buttons .pop-add-to-cart
+{
+    width:100%
+}
+.pop-buttons .pop-add-to-cart
+{
+    color:white;
+    padding: 0.7rem 2rem;
+    background-color: #a435f0;
+    border:0;
+}
+.pop-buttons .pop-add-to-cart:hover
+{
+    background-color: #8710d8;
+}
+.pop-buttons .pop-fav
+{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20rem;
+    font-size: 1.3rem;
+    width:3.8rem;
+    height:3rem;
+    margin-left:0.4rem;
+}
+.pop-buttons .pop-fav:hover
+{
+    background-color: rgba(0,0,0,.04);
+}
+.popover-0,.popover-1,.popover-2,.popover-3,.popover-4{top:12.5rem}
+/* .popover-0,.popover-1,.popover-2,.popover-3{margin-left:2rem} */
+.popover-0
+{
+    left:15rem;
+}
+
+.popover-1
+{
+    left:30.6rem;
+}
+
+.popover-2
+{
+    left:46rem;
+}
+
+.popover-3
+{
+    left:61.4rem;
+}
+
+.popover-4
+{
+    left:37rem;
+    width:28.3rem
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------ Footer -------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1d1f;
+    color:white;
+    padding-bottom:5rem;
+}
+
+footer .top-companies
+{
+    display: flex;
+    justify-content: space-between;align-items: center;
+    border-bottom:1px solid #3e4143;
+
+}
+
+footer h2
+{
+    font-size:1.14rem;
+    font-weight:700;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer h2 a
+{
+    color:#cec0fc;
+}
+
+footer h2 a:hover
+{
+    color:#cec0fc;
+}
+
+footer .top-companies .companies-logos img
+{
+    margin-right:1.5rem;
+}
+footer .top-companies .companies-logos img:last-child
+{
+    margin-right:0;
+}
+
+footer .links-and-language
+{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+
+}
+.links-and-language ul li{margin-bottom: 0.3rem;}
+.links-and-language ul a
+{
+    color:white;
+    font-size:0.9rem;
+}
+
+.links-and-language button
+{
+    text-align: start;
+    padding:0.5rem 1rem;
+    padding-right:3rem;
+    margin-left:23rem;
+    border:0.1rem solid white;
+    color:white;
+    background-color: transparent;
+}
+
+.links-and-language button:hover
+{
+    background-color: rgba(255,255,255,0.08);
+}
+
+.logo-and-copyright
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:0.7rem;
+    font-weight: 400;
+}
+.logo-and-copyright,.links-and-language,.top-companies
+{
+    padding:1.7rem 2.9rem;
+
 }

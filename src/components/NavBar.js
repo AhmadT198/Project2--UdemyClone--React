@@ -1,22 +1,28 @@
 import React, { Component } from 'react'
 import './Style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { Link } from 'react-router-dom'
 
 class NavBar extends Component {
+   
+    GoBack = () =>
+    {
+
+    }
+
     render() {
         return (
             <>
                 <nav className='main-nav'>
                     <FontAwesomeIcon icon="fa-solid fa-bars" className="menu" />
-
-                    <img alt="Logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" />
-
+                    <Link to='/'>
+                        <img alt="Logo" className='img-logo' src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" />
+                    </Link>
                     <a href="#" className="navOption categories">Categories</a>
 
                     <div className="search-bar">
-                        <form action="">
-                            <button id="search-submit" type="submit"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" size="lg" /></button>
+                        <form action="/">
+                            <button onClick={this.GoBack} id="search-submit" type="submit"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" size="lg" /></button>
                             <input id="search-bar" placeholder="Search for anything" type="text" name="search" />
                         </form>
                     </div>

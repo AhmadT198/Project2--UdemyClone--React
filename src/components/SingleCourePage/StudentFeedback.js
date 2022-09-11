@@ -6,7 +6,7 @@ class StudentFeedback extends Component {
     render() {
         const { data, displayStars } = this.props
 
-        console.log(data['ratingDistribution'])
+        // console.log(data['ratingDistribution'])
         let total = 0;
         let result = []
         for (let x of data.ratingDistribution) {
@@ -15,23 +15,14 @@ class StudentFeedback extends Component {
 
         for (let x of data.ratingDistribution) {
             let per = Math.round((x.count / total) * 100) + '%';
-            console.log(per)
-            let stars = [];
-            for(let y = 0; y < x.rating; y++)
-            {
-                stars.push(<FontAwesomeIcon icon="fa-solid fa-star" />)
-            }
-            for(let y = 0; y < 5 - x.rating; y++)
-            {
-                stars.push(<FontAwesomeIcon icon="fa-regular fa-star" />)
-            }
+            // console.log(per)
             result.push(
-                <div className='single-rating'>  
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: per }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                <div key={x.rating} className='single-rating'>  
+                    <div className="progress">
+                        <div className="progress-bar" role="progressbar" aria-label="Basic example" style={{ width: per }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div className="star-count">
-                        {stars}
+                        {displayStars(x.rating,true)}
                     </div>
                     <a href="#" className='feedback-percent'>{per}</a>
                 </div>
@@ -46,7 +37,7 @@ class StudentFeedback extends Component {
                 <div className='feedback-container'>
                     <div className='feedback-rate'>
                         <h1>{data['header']['rating'].toPrecision(2)}</h1>
-                        {displayStars(data['header']['rating'])}
+                        <div>{displayStars(data['header']['rating'],true)}</div>
                         <p>Course Rating</p>
                     </div>
                     <div className='meters'>

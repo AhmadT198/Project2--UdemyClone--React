@@ -26,7 +26,6 @@ class Courses extends Component {
                 this.setState({ post: data, isLoading: false, error: "" })
                 this.homePageData = data['HomePage']
                 this.homePageData = Object.entries(this.homePageData)
-                console.log(data['courses']['python'])
             })
             .catch((error) => {
                 this.setState({ isLoading: false, error: error })
@@ -40,11 +39,38 @@ class Courses extends Component {
     }
 
     displayTabContent() {
-        const contentPerTab = this.homePageData.map((subject, idx) => {
+        const query = new URLSearchParams(window.location.search)
+        const searchVal = query.get('search');
+
+        let modHomePageData = []; //Final form of displayed data
+
+        //if the searchVal is empty or null, take the full data as it is
+        if (searchVal == null || searchVal.trim() == "") modHomePageData = this.homePageData;
+        else {
+            //if not, search:
+            for (let x of this.homePageData) { //iterate over all the data, x=> courses per tab
+                //make a temporary copy with empty list of courses
+                let tmp = [x[0], { ...x[1] }];
+                tmp[1].items = []
+
+                //iterate over all the courses in the tab
+                for (let y of x[1].items) {
+                    //if it matches the searchValue, add it to the temporary copy
+                    if (y.title.toLowerCase().includes(searchVal.toLowerCase())) tmp[1].items.push(y);
+                }
+
+                //Push the modified form of the tab
+                modHomePageData.push(tmp);
+            }
+        }
+
+        const contentPerTab = modHomePageData.map((subject, idx) => {
             let fullData = {};
             if (this.state.post['courses'][subject[0]] != undefined
                 && Object.keys(this.state.post['courses'][subject[0]]).length != 0) { fullData = this.state.post['courses'][subject[0]] }
             else { fullData = this.state.post['courses']['python_res'] }
+
+
             return <TabContent key={subject[1]['id']} subject={subject} id={idx} full={fullData} />
         }
         )

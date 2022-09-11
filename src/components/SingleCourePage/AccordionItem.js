@@ -4,35 +4,12 @@ import { useLinkClickHandler } from 'react-router-dom';
 
 
 class AccordionItem extends Component {
-    // console.log(data)
-
-    displayContentLength = (contentLength) => {
-        let len = contentLength.split(":")
-        let result = "";
-
-        if (len.length == 3) {
-            result += Number(len[0]) + 'h ';
-            if (Number(len[2]) >= 30) {
-                result += Number(len[1]) + Number("1") + 'm'
-            }
-            else {
-                result += Number(len[1]) + 'm';
-            }
-        }
-        else {
-
-            if (Number(len[1]) >= 30) {
-                result += Number(len[0]) + Number("1") + 'm'
-            }
-            else {
-                result += Number(len[0]) + 'm';
-            }
-        }
-        return <>{result}</>
-    }
 
     iconClickHandler = () => 
     {
+        //Method for making the accordion icon rotate when expanded
+
+        
         const {data} = this.props;
         const ic = document.getElementById("icon" + data['index'])
         
@@ -40,21 +17,22 @@ class AccordionItem extends Component {
       
     }
 
+
     render(){
-        const { data } = this.props;
+        const { data,idx } = this.props;
 
         return (
-            <div class="accordion-item">
-                <h2 class="accordion-header" id={`panelsStayOpen-heading${data['index']}`}>
-                    <button    onClick={this.iconClickHandler} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#panelsStayOpen-collapse${data['index']}`} aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        <div><h2><FontAwesomeIcon id={`icon${data['index']}`} className="acc-icon" icon="fa-solid fa-chevron-down" />{data['title']}</h2> <span>{data['lecture_count']} lectures • {this.displayContentLength(data['content_length_text'])}</span></div>
+            <div id={`accItem${idx}`} className="accordion-item">
+                <h2 className="accordion-header" id={`panelsStayOpen-heading${data['index']}`}>
+                    <button onClick={this.iconClickHandler} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#panelsStayOpen-collapse${data['index']}`} aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <div><h2><FontAwesomeIcon id={`icon${data['index']}`} className="acc-icon" icon="fa-solid fa-chevron-down" />{data['title']}</h2> <span>{data['lecture_count']} lectures • {this.props.displayContentLength(data['content_length_text'])}</span></div>
                     </button>
                 </h2>
-                <div id={`panelsStayOpen-collapse${data['index']}`} class="accordion-collapse collapse" aria-labelledby={`panelsStayOpen-heading${data['index']}`}>
-                    <div class="accordion-body">
+                <div id={`panelsStayOpen-collapse${data['index']}`} className="accordion-collapse collapse" aria-labelledby={`panelsStayOpen-heading${data['index']}`}>
+                    <div className="accordion-body">
                         <ul>
-                            {data.items.map((lesson) => {
-                                return <li>
+                            {data.items.map((lesson,idx) => {
+                                return <li key={`section${idx+1}`}>
 
 
                                     {lesson.can_be_previewed ? (

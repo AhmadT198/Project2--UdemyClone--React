@@ -16,7 +16,7 @@ class HomePage extends Component {
           <Header />
           <main>
             <Courses />
-
+      
           </main>
         </div>
       </>

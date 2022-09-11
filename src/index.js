@@ -11,26 +11,26 @@ import {
 import HomePage from './components/HomePage';
 import NavBar from './components/NavBar';
 import SingleCoursePage from './components/SingleCourePage/SingleCoursePage'
-
-
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStar as emptyStar, faFolder, faFile, faBell } from '@fortawesome/free-regular-svg-icons'
-import { faUser,faMedal,faChevronDown, faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+import { faThumbsDown, faThumbsUp,faHeart, faStar as emptyStar, faFolder, faFile, faBell } from '@fortawesome/free-regular-svg-icons'
+import { faUser, faMedal, faChevronDown, faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+import Footer from './components/Footer'
+
 library.add(faUser, faMedal, faChevronDown, faCheck, faTrophy, faMobileScreen, faInfinity, faTv, faStarHalfStroke, faStar, faBars, faMagnifyingGlass, faCartShopping, faGlobe, faChevronRight, faChevronLeft, faCircleExclamation, faClosedCaptioning, faCirclePlay)
-
-library.add(emptyStar, faFolder, faFile, faBell)
-
+library.add( faThumbsDown, faThumbsUp,faHeart, emptyStar, faFolder, faFile, faBell)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <BrowserRouter>
     <NavBar />
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/course/:courseUrl" element={<SingleCoursePage />} />
 
-    </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/course/:courseUrl" element={<SingleCoursePage />} />
+
+      </Routes>
+      <Footer />
   </BrowserRouter>
 );
 

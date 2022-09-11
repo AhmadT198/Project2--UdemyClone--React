@@ -13,7 +13,7 @@ function TabContent(props) {
     const courseList = tabData['items'].map((data, idx) => {
         const urlTitle = data['published_title'];
 
-        
+
         let fullCourseData;
         if (full != undefined) {
             if (full.hasOwnProperty('urlTitle')) { fullCourseData = full[urlTitle] }
@@ -62,7 +62,7 @@ function TabContent(props) {
                                 <span aria-hidden="true"><FontAwesomeIcon icon="fa-solid fa-chevron-left" size="xl" /></span>
                             </button>
                             <button
-                                className="border border-light carousel-control-next btnHeight CustomTop btnWidth rounded-circle"
+                                className="border nextBtnRight border-light carousel-control-next btnHeight CustomTop btnWidth rounded-circle"
                                 type="button" data-bs-target={`#${tabTitle}`} data-bs-slide="next">
                                 <span aria-hidden="true"><FontAwesomeIcon icon="fa-solid fa-chevron-right" size="xl" /></span>
                             </button>

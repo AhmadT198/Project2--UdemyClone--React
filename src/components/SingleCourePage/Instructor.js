@@ -24,7 +24,7 @@ class Instructor extends Component {
                             <li><FontAwesomeIcon className='inst-icon' icon="fa-solid fa-play-circle" />{this.formatNum(data.courseCount)} Courses</li>
                         </ul>
                     </div>
-                    <CollapsableText content={data['desc']} />
+                    <CollapsableText content={data['desc']} maxH={12.1*16} />
                 </div>
             </>
 

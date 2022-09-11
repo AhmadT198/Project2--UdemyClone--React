@@ -2,41 +2,17 @@ import React from 'react'
 import './Style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Header(props) {
-    const { data } = props
+    const { data,displayStars } = props
 
     const formatNum = (num) => { return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
 
-    const displayStars = (rate) => {
-        const result = [];
-        for (let x = 0; x < Math.floor(rate); x++) {
-            result.push(<FontAwesomeIcon className="singleStar" icon="fa-solid fa-star" />)
-        }
-
-        let frac = Number(rate) - Math.floor(rate);
-        frac = frac.toPrecision(1);
-
-        if (frac >= 0.3 && frac <= 0.7) { //Half a star from 0.3 to 0.7
-            result.push(<FontAwesomeIcon className="singleStar" icon="fa-solid fa-star-half-stroke" />)
-
-
-        } else if (frac >= 0.8) //full star for 0.8 and 0.9
-        {
-
-            result.push(<FontAwesomeIcon className="singleStar" icon="fa-solid fa-star" />)
-
-        }
-
-        return <>{result}</>
-
-
-    }
-
+   
     const displayInsts = () => {
         const inst = data['instructor']
         let result = []
         for (let person in inst) {
             if (person != 0) { result.push(', ') }
-            result.push(<a class='inst-name' href="#">{inst[person]}</a>)
+            result.push(<a key={`person${person+1}`} className='inst-name' href="#">{inst[person]}</a>)
         }
 
         return <>{result}</>
@@ -85,7 +61,7 @@ function Header(props) {
                         <a href="#">
                             <span className='rating'>
                                 <span className='rating-num'>{data['rating'].toPrecision(2)}</span>
-                                {displayStars(data['rating'])}
+                                {displayStars(data['rating'],false)}
                             </span>
                             <span className='review-num'>{`(${formatNum(data['num_reviews'])} ratings)`}</span>
                         </a>
