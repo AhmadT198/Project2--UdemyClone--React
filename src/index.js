@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
+  HashRouter,
   BrowserRouter,
   Routes,
   Route,
@@ -22,7 +23,7 @@ library.add( faThumbsDown, faThumbsUp,faHeart, emptyStar, faFolder, faFile, faBe
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <NavBar />
 
       <Routes>
@@ -31,7 +32,7 @@ root.render(
 
       </Routes>
       <Footer />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
