@@ -38,7 +38,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://<username>.github.io/<repository-name>/",
+  "homepage": "https://ahmadt198.github.io/Project2--UdemyClone--React/",
   "browserslist": {
     "production": [
       ">0.2%",
