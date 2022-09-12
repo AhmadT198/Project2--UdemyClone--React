@@ -58,6 +58,7 @@ class Card extends Component {
     
     render() {
         const { course, idx, full } = this.props
+        // console.log(course['url'])
         return (
             <>
                 <li onMouseOver={this.hoverHandler} onMouseLeave={this.leaveHandler} className={`course${idx}`} key={course['id']}>

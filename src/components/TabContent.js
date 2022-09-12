@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function TabContent(props) {
-    const { id, full } = props
+    const { id, full, active } = props
     const tabTitle = props.subject[0]
     const tabData = props.subject[1]
 
@@ -41,7 +41,7 @@ function TabContent(props) {
     
     return (
         <>
-            <div className={`tab-pane fade show${(id == 0 ? ' active' : '')}`} id={`${tabTitle}-tab-pane`} role="tabpanel" aria-labelledby={`${tabTitle}-tab`}
+            <div className={`tab-pane fade show${(active ? ' active' : '')}`} id={`${tabTitle}-tab-pane`} role="tabpanel" aria-labelledby={`${tabTitle}-tab`}
                 tabIndex={id}>
 
                 <section className="course-details">

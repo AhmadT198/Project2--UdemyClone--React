@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom'
 
 class NavBar extends Component {
 
-    GoBack = () => {
-
-    }
-
     render() {
         return (
             <>
@@ -20,8 +16,8 @@ class NavBar extends Component {
                     <a href="#" className="navOption categories">Categories</a>
 
                     <div className="search-bar">
-                        <form action="/">
-                            <button onClick={this.GoBack} id="search-submit" type="submit"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" size="lg" /></button>
+                        <form action="#/">
+                            <button id="search-submit" type="submit"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" size="lg" /></button>
                             <input id="search-bar" placeholder="Search for anything" type="text" name="search" />
                         </form>
                     </div>
