@@ -499,6 +499,7 @@ button.add-to-cart {
     font-weight: 400;
     margin-bottom: 0.5rem;
     display: flex;
+    padding-right:0.4rem
 }
 
 .single-course-page .what-youll-learn .check-icon {

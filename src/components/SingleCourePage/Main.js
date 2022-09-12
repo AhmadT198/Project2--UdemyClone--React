@@ -6,7 +6,8 @@ import Instructor from './Instructor'
 import StudentFeedback from './StudentFeedback'
 import Reviews from './Reviews'
 import SideBar from './SideBar'
-
+import Section from './Section'
+import SingleCourseNavbar from './SingleCourseNavbar'
 
 export class Main extends Component {
 
@@ -50,7 +51,7 @@ export class Main extends Component {
                     sideBarClass: "sidebar-container-rel"
                 })
 
-                
+
             }
 
         } else {
@@ -69,7 +70,7 @@ export class Main extends Component {
     }
     componentDidMount() {
         window.addEventListener('scroll', this.scorllHandler)
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
     }
 
     shouldComponentUpdate(nextProps, nextStates) {
@@ -82,62 +83,25 @@ export class Main extends Component {
         return (
             <main>
                 <div className='border-container'>
-                    <nav className={this.state.navClass}>
-                        <div className='main-container'>
-                            <div className='nav-container'>
-                                <button>Overview</button>
-                                <button>Curriculum</button>
-                                <button>Instructor</button>
-                                <button>Reviews</button>
-                            </div>
-                        </div>
-                    </nav>
+                    <SingleCourseNavbar navClass={this.state.navClass} />
                 </div>
 
 
                 <div className='main-container'>
                     <SideBar data={data} sideBarClass={this.state.sideBarClass} />
 
+                    <Section className='what-youll-learn' title="What you'll learn" content={<ul>{data['curriculum']['whatYoullLearn'].map((point, idx) => <li key={idx}><FontAwesomeIcon className='check-icon' icon="fa-solid fa-check" /><span>{point}</span></li>)}</ul>} />
 
-                    <section className='what-youll-learn'>
-                        <h2>What you'll learn</h2>
-                        <ul>
-                            {
-                                data['curriculum']['whatYoullLearn'].map((point, idx) => <li key={idx}><FontAwesomeIcon className='check-icon' icon="fa-solid fa-check" /><span>{point}</span></li>)
-                            }
+                    <Section className='course-content' title='Course Content' content={<Accordion data={data['curriculum']} />} />
 
-                        </ul>
-                    </section>
+                    <Section className='req' title="Requirements" content={<ul>{data['req'].map((r, idx) => <li key={idx}>{r}</li>)}</ul>} />
 
+                    <Section className='desc' title='Description' content={<CollapsableText content={data['description']} maxH={12.1 * 16} />} />
 
-
-                    <section className='course-content'>
-                        <h2>Course Content</h2>
-                        <Accordion data={data['curriculum']} />
-                    </section>
-
-
-                    <section className='req'>
-                        <h2>Requirements</h2>
-                        <ul>
-                            {data['req'].map((r, idx) => <li key={idx}>{r}</li>)}
-                        </ul>
-                    </section>
-
-
-                    <section className='desc'>
-                        <h2>Description</h2>
-                        <CollapsableText content={data['description']} maxH={12.1 * 16} />
-                    </section>
-
-                    <section className='instructors'>
-                        <h2>Instructors</h2>
-                        {
-                            data['instructors'].map((data) => <Instructor key={data.id} data={data} />)
-                        }
-                    </section>
+                    <Section className='instructors' title='Instructors' content={data['instructors'].map((data) => <Instructor key={data.id} data={data} />)} />
 
                     <StudentFeedback data={data} displayStars={displayStars} />
+
                     <Reviews data={data['reviews']} displayStars={displayStars} />
                 </div>
             </main>
