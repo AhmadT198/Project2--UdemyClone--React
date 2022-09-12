@@ -90,9 +90,10 @@ class Courses extends Component {
                 <p className="mb-0">Choose from 185,000 online video courses with new additions published every month</p>
 
 
-                {(this.state.isLoading ? (<div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>)
+                {(this.state.isLoading ? (
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>)
                     :
                     (<>
                         {
