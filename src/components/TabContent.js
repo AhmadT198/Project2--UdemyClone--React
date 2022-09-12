@@ -12,15 +12,15 @@ function TabContent(props) {
 
     const courseList = tabData['items'].map((data, idx) => {
         const urlTitle = data['published_title'];
-        // console.log(urlTitle)
 
         let fullCourseData;
         if (full != undefined) {
             if (full.hasOwnProperty(urlTitle)) { fullCourseData = full[urlTitle] }
             else { fullCourseData = full[Object.keys(full)[0]] }
         }
+
+
         return <Card course={data} key={data['id']} full={fullCourseData} idx={idx} />
-        return <></>;
     }
     )
 
@@ -33,10 +33,12 @@ function TabContent(props) {
 
             result.push(<CarouselSlide content={currSlide} key={x} id={x - 1} />)
         }
-        return <>{result}</>
+        
+        return result
     }
 
-
+    const carouselSlides = makeCarouselSlides(); 
+    
     return (
         <>
             <div className={`tab-pane fade show${(id == 0 ? ' active' : '')}`} id={`${tabTitle}-tab-pane`} role="tabpanel" aria-labelledby={`${tabTitle}-tab`}
@@ -54,15 +56,15 @@ function TabContent(props) {
                         <div id={`${tabTitle}`} className="text-decoration-none carousel slide w-100" data-bs-interval="false">
 
                             <div className="carousel-inner">
-                                {makeCarouselSlides()}
+                                {carouselSlides}
                             </div>
-                            <button
-                                className="border border-light prevBtnLeft carousel-control-prev btnHeight CustomTop btnWidth ms-1 rounded-circle"
+                            <button id="courses-carousel-prev-button"
+                                className={`${carouselSlides.length <= 1? 'd-none ' : ''}border border-light prevBtnLeft carousel-control-prev btnHeight CustomTop btnWidth ms-1 rounded-circle`}
                                 type="button" data-bs-target={`#${tabTitle}`} data-bs-slide="prev">
                                 <span aria-hidden="true"><FontAwesomeIcon icon="fa-solid fa-chevron-left" size="xl" /></span>
                             </button>
-                            <button
-                                className="border nextBtnRight border-light carousel-control-next btnHeight CustomTop btnWidth rounded-circle"
+                            <button id="courses-carousel-next-button"
+                                className={`${carouselSlides.length <= 1? 'd-none ' : ''}border nextBtnRight border-light carousel-control-next btnHeight CustomTop btnWidth rounded-circle`}
                                 type="button" data-bs-target={`#${tabTitle}`} data-bs-slide="next">
                                 <span aria-hidden="true"><FontAwesomeIcon icon="fa-solid fa-chevron-right" size="xl" /></span>
                             </button>
