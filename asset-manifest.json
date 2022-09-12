@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Project2--UdemyClone--React/static/css/main.7a97673a.css",
-    "main.js": "/Project2--UdemyClone--React/static/js/main.54ee8ba2.js",
+    "main.js": "/Project2--UdemyClone--React/static/js/main.d4ce70da.js",
     "static/js/787.f6b2eaaf.chunk.js": "/Project2--UdemyClone--React/static/js/787.f6b2eaaf.chunk.js",
     "static/media/alarm.png": "/Project2--UdemyClone--React/static/media/alarm.f8e6dac7aea480663d83.png",
     "index.html": "/Project2--UdemyClone--React/index.html",
     "main.7a97673a.css.map": "/Project2--UdemyClone--React/static/css/main.7a97673a.css.map",
-    "main.54ee8ba2.js.map": "/Project2--UdemyClone--React/static/js/main.54ee8ba2.js.map",
+    "main.d4ce70da.js.map": "/Project2--UdemyClone--React/static/js/main.d4ce70da.js.map",
     "787.f6b2eaaf.chunk.js.map": "/Project2--UdemyClone--React/static/js/787.f6b2eaaf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7a97673a.css",
-    "static/js/main.54ee8ba2.js"
+    "static/js/main.d4ce70da.js"
   ]
 }
