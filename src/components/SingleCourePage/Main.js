@@ -90,11 +90,11 @@ class Main extends Component {
                 <div className='main-container'>
                     <SideBar data={data} sideBarClass={this.state.sideBarClass} />
 
-                    <Section className='what-youll-learn' title="What you'll learn" content={<ul>{data['curriculum']['whatYoullLearn'].map((point, idx) => <li key={idx}><FontAwesomeIcon className='check-icon' icon="fa-solid fa-check" /><span>{point}</span></li>)}</ul>} />
+                    <Section className='what-youll-learn' title="What you'll learn" content={<ul>{data['curriculum']['whatYoullLearn'].map((point) => <li key={point}><FontAwesomeIcon className='check-icon' icon="fa-solid fa-check" /><span>{point}</span></li>)}</ul>} />
 
                     <Section className='course-content' title='Course Content' content={<Accordion data={data['curriculum']} />} />
 
-                    <Section className='req' title="Requirements" content={<ul>{data['req'].map((r, idx) => <li key={idx}>{r}</li>)}</ul>} />
+                    <Section className='req' title="Requirements" content={<ul>{data['req'].map((r) => <li key={r}>{r}</li>)}</ul>} />
 
                     <Section className='desc' title='Description' content={<CollapsableText content={data['description']} maxH={12.1 * 16} />} />
 

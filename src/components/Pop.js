@@ -13,6 +13,7 @@ class Pop extends Component {
 
   render() {
     const { course, idx } = this.props
+    console.log(course.objectives_summary)
     return (
       <div className="pop">
         <h2>{course.title}</h2>
@@ -20,7 +21,7 @@ class Pop extends Component {
         <p className='pop-details'><span>{course.content_info}</span> <span>{course.instructional_level}</span> Subtitles</p>
         <p className='pop-intro'>{course.headline}</p>
         <ul className='pop-what-youll-learn'>
-          {course.objectives_summary.map((point, idx) => <li><FontAwesomeIcon className='pop-icon' icon="fa-solid fa-check" /><div>{point}</div></li>)}
+          {course.objectives_summary.map((point) => <li key={point}><FontAwesomeIcon className='pop-icon' icon="fa-solid fa-check" /><div>{point}</div></li>)}
         </ul>
         <div className='pop-buttons'>
           <button className='pop-add-to-cart'>Add to cart</button>

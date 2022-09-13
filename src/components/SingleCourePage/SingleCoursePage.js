@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function SingleCoursePage(props) {
     const location = useLocation();
     const data = location.state;
-    console.log(data)
 
     const displayStars = (rate, full) => {
         const result = [];

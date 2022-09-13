@@ -20,7 +20,6 @@ class AccordionItem extends Component {
 
     render(){
         const { data,idx } = this.props;
-
         return (
             <div id={`accItem${idx}`} className="accordion-item">
                 <h2 className="accordion-header" id={`panelsStayOpen-heading${data['index']}`}>
@@ -31,8 +30,9 @@ class AccordionItem extends Component {
                 <div id={`panelsStayOpen-collapse${data['index']}`} className="accordion-collapse collapse" aria-labelledby={`panelsStayOpen-heading${data['index']}`}>
                     <div className="accordion-body">
                         <ul>
-                            {data.items.map((lesson,idx) => {
-                                return <li key={`section${idx+1}`}>
+                            {data.items.map((lesson) => {
+
+                                return <li key={lesson.id}>
 
 
                                     {lesson.can_be_previewed ? (

@@ -7,12 +7,12 @@ class SingleReview extends Component {
 
     likeClickHandler = () => 
     {
-
+        //Extra _ TODO
     }
 
     dislikeClickHandler = () => 
     {
-
+        //Extra _ TODO
     }
 
     render() {

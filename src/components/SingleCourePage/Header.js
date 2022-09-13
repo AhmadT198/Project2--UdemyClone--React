@@ -18,7 +18,6 @@ function Header(props) {
 
         return <>{result}</>
     }
-    console.log(headerData)
     return (
         <header>
             <div className='header-banner'>
