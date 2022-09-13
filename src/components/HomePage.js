@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Courses from './Courses'
+import CoursesSection from './CoursesSection'
 import Header from './Header'
 
 
@@ -15,7 +15,7 @@ class HomePage extends Component {
         <div className='home-page'>
           <Header />
           <main>
-            <Courses />
+            <CoursesSection />
       
           </main>
         </div>
