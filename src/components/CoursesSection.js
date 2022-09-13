@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Tab from './Tab.js'
 import TabContent from './TabContent.js'
+import { DataUrl } from '../Urls.js'
 
 class Courses extends Component {
 
@@ -22,7 +23,7 @@ class Courses extends Component {
             error: "",
             post: {}
         })
-        fetch('https://ahmadt198.github.io/Data/db.json')
+        fetch(DataUrl)
             .then(res => res.json())
             .then((data) => {
                 // console.log(data)
