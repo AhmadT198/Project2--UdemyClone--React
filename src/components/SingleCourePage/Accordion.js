@@ -119,6 +119,11 @@ class Accordion extends Component {
       btn.classList.toggle('d-none');
 
     }
+
+    //Open the first tab
+    const el = document.querySelector('[data-bs-target="#panelsStayOpen-collapse1"]');
+    console.log(el)
+    el.click()
   }
 
 

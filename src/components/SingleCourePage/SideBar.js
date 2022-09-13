@@ -10,7 +10,6 @@ class SideBar extends Component {
         else return false;
     }
     render() {
-        console.log('sidebar rerendered')
         const { data, sideBarClass } = this.props
         return (
             <div className='side-bar-container'>

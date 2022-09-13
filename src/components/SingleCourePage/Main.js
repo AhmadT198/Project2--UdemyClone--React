@@ -23,22 +23,24 @@ class Main extends Component {
 
 
     scorllHandler = () => {
-        // console.log(window.scrollY)
-        const footerTop = document.getElementsByTagName('footer')[0].getBoundingClientRect().top;
-        const sb = document.getElementsByClassName("udemy-business");
-        const banner = document.getElementsByClassName("header-banner")[0].getBoundingClientRect().bottom;
-        const header = document.getElementsByClassName("header-content")[0].getBoundingClientRect().bottom;
+
+        const headerBannerBottom = document.getElementsByClassName("header-banner")[0].getBoundingClientRect().bottom;
+        const headerSectionBottom = document.getElementsByClassName("header-content")[0].getBoundingClientRect().bottom;
         const nav = document.getElementsByTagName("nav")[1].getBoundingClientRect().height;
 
+        
+        const footerTop = document.getElementsByTagName('footer')[0].getBoundingClientRect().top + window.scrollY; //absolute position of the footer top
+        const sideBarHeight = document.getElementById("sidebar").getBoundingClientRect().height;
+       
 
         //if the header banner passed the second navBar
-        if (header <= banner + nav) {
+        if (nav + headerSectionBottom <= headerBannerBottom) {
             this.setState({
                 navClass: "nav-fixed"
             })
 
             //if the sidebar didnt collide with the footer
-            if (footerTop > sb[0].getBoundingClientRect().bottom) {
+            if (footerTop > window.scrollY + 16 + sideBarHeight) {
                 this.setState({
                     sideBarClass: "sidebar-container-fixed"
                 })
@@ -52,6 +54,10 @@ class Main extends Component {
                 })
 
 
+                //make sure the navbar is at the top of the footer
+                const sideBar = document.getElementById("sidebar");
+                const topVal = (footerTop - sideBarHeight - 20 * 16);   // - 20 rem , rem = 16px
+                sideBar.style.top = topVal + "px";
             }
 
         } else {
@@ -68,6 +74,7 @@ class Main extends Component {
 
 
     }
+
     componentDidMount() {
         window.addEventListener('scroll', this.scorllHandler)
         window.scrollTo(0, 0);
@@ -78,7 +85,7 @@ class Main extends Component {
         else return false;
     }
     render() {
-        // console.log('main-rerendered')
+        console.log('main-rerendered')
         const { data, displayStars } = this.props
         return (
             <main>

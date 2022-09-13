@@ -8,6 +8,9 @@ html {
     font-size: 16px;
 }
 
+main{
+    padding-bottom: 4rem;
+}
 
 .single-course-page h1 {
     font-family: 'Open Sans', sans-serif;
@@ -320,6 +323,7 @@ html {
 
 .single-course-page .side-bar .bar-body {
     padding: 1.5rem;
+    padding-top:0.8rem;
     display: flex;
     flex-direction: column;
 }
@@ -448,7 +452,7 @@ button.add-to-cart {
     padding: 0 1.5rem;
     text-align: start;
     border-top: 1px solid #d1d7dc;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.3rem;
 }
 
 .single-course-page main h2 {
@@ -791,9 +795,6 @@ input:focus {
     display: flex;
 }
 
-.reviews {
-    margin-bottom: 4rem
-}
 
 .review-search {
     display: flex;
