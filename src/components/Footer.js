@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-export class Footer extends Component {
+class Footer extends Component {
     render() {
         return (
             <footer>

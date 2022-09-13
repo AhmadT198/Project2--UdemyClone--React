@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { v4 as uuid } from 'uuid';
 
-export class CollapsableText extends Component {
+class CollapsableText extends Component {
   constructor(props) {
     super(props)
     let content_id;

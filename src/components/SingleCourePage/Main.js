@@ -9,7 +9,7 @@ import SideBar from './SideBar'
 import Section from './Section'
 import SingleCourseNavbar from './SingleCourseNavbar'
 
-export class Main extends Component {
+class Main extends Component {
 
     constructor(props) {
         super(props)

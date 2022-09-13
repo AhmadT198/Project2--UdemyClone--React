@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import CollapsableText from './CollapsableText'
 
 
-export class SingleReview extends Component {
+class SingleReview extends Component {
 
     likeClickHandler = () => 
     {
